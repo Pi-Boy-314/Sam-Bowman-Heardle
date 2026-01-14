@@ -9,7 +9,7 @@ const props = defineProps({
 
 <template>
   <div class="soundcloud-box">
-    <a :href="SelectedMusic.url" :title="'Listen to ' + SelectedMusic.title + ' on YouTube'" >
+    <a :href="SelectedMusic.url" :title="'Listen to ' + SelectedMusic.album + ' - ' + SelectedMusic.title + ' on YouTube'" >
       <div class="title-card" :won="isWon ? 'true' : 'false'">
         <img v-if="SelectedMusic.art" :src="SelectedMusic.art" alt="Album art" class="album-art">
         <div class="title">

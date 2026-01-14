@@ -1,1185 +1,548 @@
 [
   {
     "title": "Ashes",
-    "media": "Children of the Burning Heart",
     "url": "https://www.youtube.com/watch?v=hyDJK5XCp6Q",
     "art": "https://cdn-images.dzcdn.net/images/cover/fcab396222642bad0db02bcb4c08a8c1/250x250-000000-80-0-0.jpg",
-    "tags": {
-      "year": 2021,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Children of the Burning Heart",
-      "game-genre": "Pop"
-    }
+    "album": "Children of the Burning Heart"
   },
   {
     "title": "Cloudburst (Xander Sallows Remix)",
-    "media": "Children of the Burning Heart",
     "url": "https://www.youtube.com/watch?v=ksX_ClqqpQs",
-    "tags": {
-      "year": 2021,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Children of the Burning Heart",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/a27e46df630e59e59bf7a5c9435c4f65/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/a27e46df630e59e59bf7a5c9435c4f65/250x250-000000-80-0-0.jpg",
+    "album": "Children of the Burning Heart"
   },
   {
     "title": "Deep Sleep (Interlude)",
-    "media": "Children of the Burning Heart",
     "url": "https://www.youtube.com/watch?v=NrLc5juIZ3U",
-    "tags": {
-      "year": 2021,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Children of the Burning Heart",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/a27e46df630e59e59bf7a5c9435c4f65/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/a27e46df630e59e59bf7a5c9435c4f65/250x250-000000-80-0-0.jpg",
+    "album": "Children of the Burning Heart"
   },
   {
     "title": "Doxology",
-    "media": "Children of the Burning Heart",
     "url": "https://www.youtube.com/watch?v=yIPqML0Tba8",
-    "tags": {
-      "year": 2021,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Children of the Burning Heart",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/a27e46df630e59e59bf7a5c9435c4f65/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/a27e46df630e59e59bf7a5c9435c4f65/250x250-000000-80-0-0.jpg",
+    "album": "Children of the Burning Heart"
   },
   {
     "title": "Feel Lonely",
-    "media": "Children of the Burning Heart",
     "url": "https://www.youtube.com/watch?v=2T_XPkvAIQw",
-    "tags": {
-      "year": 2021,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Children of the Burning Heart",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/69ad60e0f9a6441eb4b6987a9c9207c7/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/69ad60e0f9a6441eb4b6987a9c9207c7/250x250-000000-80-0-0.jpg",
+    "album": "Children of the Burning Heart"
   },
   {
     "title": "Feel Lonely (Matthew Parker Remix)",
-    "media": "Children of the Burning Heart",
     "url": "https://www.youtube.com/watch?v=JwFX742-hD8",
-    "tags": {
-      "year": 2021,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Children of the Burning Heart",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/50dc557350fedc98b7b15c6a904095ee/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/50dc557350fedc98b7b15c6a904095ee/250x250-000000-80-0-0.jpg",
+    "album": "Children of the Burning Heart"
   },
   {
     "title": "Head Above Water",
-    "media": "Children of the Burning Heart",
     "url": "https://www.youtube.com/watch?v=pcZR3HhS3hM",
-    "tags": {
-      "year": 2021,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Children of the Burning Heart",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/a27e46df630e59e59bf7a5c9435c4f65/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/a27e46df630e59e59bf7a5c9435c4f65/250x250-000000-80-0-0.jpg",
+    "album": "Children of the Burning Heart"
   },
   {
     "title": "Hideaway (Interlude)",
-    "media": "Children of the Burning Heart",
     "url": "https://www.youtube.com/watch?v=xQIMecweJTU",
-    "tags": {
-      "year": 2021,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Children of the Burning Heart",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/a27e46df630e59e59bf7a5c9435c4f65/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/a27e46df630e59e59bf7a5c9435c4f65/250x250-000000-80-0-0.jpg",
+    "album": "Children of the Burning Heart"
   },
   {
     "title": "Icarus",
-    "media": "Children of the Burning Heart",
     "url": "https://www.youtube.com/watch?v=-3-46tSs9C0",
-    "tags": {
-      "year": 2021,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Children of the Burning Heart",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/9bbab49d7354dd6724e94911bb59a017/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/9bbab49d7354dd6724e94911bb59a017/250x250-000000-80-0-0.jpg",
+    "album": "Children of the Burning Heart"
   },
   {
     "title": "Miss You",
-    "media": "Children of the Burning Heart",
     "url": "https://www.youtube.com/watch?v=YgmDK9l6H-4",
-    "tags": {
-      "year": 2021,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Children of the Burning Heart",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/c67532afc8924ec668729d8ce77701fe/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/c67532afc8924ec668729d8ce77701fe/250x250-000000-80-0-0.jpg",
+    "album": "Children of the Burning Heart"
   },
   {
     "title": "Smoke",
-    "media": "Children of the Burning Heart",
     "url": "https://www.youtube.com/watch?v=iRLnlCbolR4",
-    "tags": {
-      "year": 2021,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Children of the Burning Heart",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/a27e46df630e59e59bf7a5c9435c4f65/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/a27e46df630e59e59bf7a5c9435c4f65/250x250-000000-80-0-0.jpg",
+    "album": "Children of the Burning Heart"
   },
   {
     "title": "Until Tomorrow",
-    "media": "Children of the Burning Heart",
     "url": "https://www.youtube.com/watch?v=tBS0om3rvoY",
-    "tags": {
-      "year": 2021,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Children of the Burning Heart",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/a27e46df630e59e59bf7a5c9435c4f65/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/a27e46df630e59e59bf7a5c9435c4f65/250x250-000000-80-0-0.jpg",
+    "album": "Children of the Burning Heart"
   },
   {
     "title": "Welcome to Daylight",
-    "media": "Children of the Burning Heart",
     "url": "https://www.youtube.com/watch?v=r-lIrscyEpc",
-    "tags": {
-      "year": 2021,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Children of the Burning Heart",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/a27e46df630e59e59bf7a5c9435c4f65/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/a27e46df630e59e59bf7a5c9435c4f65/250x250-000000-80-0-0.jpg",
+    "album": "Children of the Burning Heart"
   },
   {
     "title": "When All of This Is Over",
-    "media": "Children of the Burning Heart",
     "url": "https://www.youtube.com/watch?v=MSDPdrE69wU",
-    "tags": {
-      "year": 2021,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Children of the Burning Heart",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/a27e46df630e59e59bf7a5c9435c4f65/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/a27e46df630e59e59bf7a5c9435c4f65/250x250-000000-80-0-0.jpg",
+    "album": "Children of the Burning Heart"
   },
   {
     "title": "Wings",
-    "media": "Children of the Burning Heart",
     "url": "https://www.youtube.com/watch?v=n5GwdVTdHqA",
-    "tags": {
-      "year": 2021,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Children of the Burning Heart",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/a27e46df630e59e59bf7a5c9435c4f65/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/a27e46df630e59e59bf7a5c9435c4f65/250x250-000000-80-0-0.jpg",
+    "album": "Children of the Burning Heart"
   },
   {
     "title": "CRESCERE",
-    "media": "Atlas",
     "url": "https://www.youtube.com/watch?v=QKJWMTTeF8w",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Atlas",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/fdffbe04828242efd84f76e6e1f8e65e/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/fdffbe04828242efd84f76e6e1f8e65e/250x250-000000-80-0-0.jpg",
+    "album": "Atlas"
   },
   {
     "title": "DO THE NEXT THING",
-    "media": "Atlas",
     "url": "https://www.youtube.com/watch?v=_0-GgjLKwgs",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Atlas",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/4343dcb2e8f3d8858ec0ac6255f021d3/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/4343dcb2e8f3d8858ec0ac6255f021d3/250x250-000000-80-0-0.jpg",
+    "album": "Atlas"
   },
   {
     "title": "ECLIPSE YOU",
-    "media": "Atlas",
     "url": "https://www.youtube.com/watch?v=NEIb6m_QIE4",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Atlas",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/29c4b72ae526423975a30d45ccf7b232/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/29c4b72ae526423975a30d45ccf7b232/250x250-000000-80-0-0.jpg",
+    "album": "Atlas"
   },
   {
     "title": "FLYING DUTCHMAN",
-    "media": "Atlas",
     "url": "https://www.youtube.com/results?search_query=FLYING%20DUTCHMAN%20Sam%20Bowman%20audio",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Atlas",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/e8d25cb02b30f0f498b6efaa1d966b7e/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/e8d25cb02b30f0f498b6efaa1d966b7e/250x250-000000-80-0-0.jpg",
+    "album": "Atlas"
   },
   {
     "title": "GODS OF DAMASCUS",
-    "media": "Atlas",
     "url": "https://www.youtube.com/watch?v=NmJnZD5U0uw",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Atlas",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/29c4b72ae526423975a30d45ccf7b232/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/29c4b72ae526423975a30d45ccf7b232/250x250-000000-80-0-0.jpg",
+    "album": "Atlas"
   },
   {
     "title": "GRAVITY",
-    "media": "Atlas",
     "url": "https://www.youtube.com/watch?v=DZ9O_w3ptYU",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Atlas",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/29c4b72ae526423975a30d45ccf7b232/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/29c4b72ae526423975a30d45ccf7b232/250x250-000000-80-0-0.jpg",
+    "album": "Atlas"
   },
   {
     "title": "HOW FIRM A FOUNDATION",
-    "media": "Atlas",
     "url": "https://www.youtube.com/watch?v=2HEF7FJox2M",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Atlas",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/29c4b72ae526423975a30d45ccf7b232/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/29c4b72ae526423975a30d45ccf7b232/250x250-000000-80-0-0.jpg",
+    "album": "Atlas"
   },
   {
     "title": "INERTIA",
-    "media": "Atlas",
     "url": "https://www.youtube.com/watch?v=dMmxbbDcqxs",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Atlas",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/099aee03d9b4cb57ef59a58e61a3d662/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/099aee03d9b4cb57ef59a58e61a3d662/250x250-000000-80-0-0.jpg",
+    "album": "Atlas"
   },
   {
     "title": "IS THIS WHAT IT MEANS TO BE ALIVE",
-    "media": "Atlas",
     "url": "https://www.youtube.com/watch?v=2HEF7FJox2M",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Atlas",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/29c4b72ae526423975a30d45ccf7b232/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/29c4b72ae526423975a30d45ccf7b232/250x250-000000-80-0-0.jpg",
+    "album": "Atlas"
   },
   {
     "title": "LANCELOT",
-    "media": "Atlas",
     "url": "https://www.youtube.com/watch?v=wsaAi8WyRRI",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Atlas",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/2d5b24f4237347720b7c6b882be53442/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/2d5b24f4237347720b7c6b882be53442/250x250-000000-80-0-0.jpg",
+    "album": "Atlas"
   },
   {
     "title": "LEGEND OF ATLAS",
-    "media": "Atlas",
     "url": "https://www.youtube.com/watch?v=XCLbAhhvsDE",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Atlas",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/29c4b72ae526423975a30d45ccf7b232/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/29c4b72ae526423975a30d45ccf7b232/250x250-000000-80-0-0.jpg",
+    "album": "Atlas"
   },
   {
     "title": "MAYFLY",
-    "media": "Atlas",
     "url": "https://www.youtube.com/watch?v=SANWXdFgqQs",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Atlas",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/29c4b72ae526423975a30d45ccf7b232/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/29c4b72ae526423975a30d45ccf7b232/250x250-000000-80-0-0.jpg",
+    "album": "Atlas"
   },
   {
     "title": "PANDORA'S BOX",
-    "media": "Atlas",
     "url": "https://www.youtube.com/watch?v=F4os3olBL3w",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Atlas",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/29c4b72ae526423975a30d45ccf7b232/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/29c4b72ae526423975a30d45ccf7b232/250x250-000000-80-0-0.jpg",
+    "album": "Atlas"
   },
   {
     "title": "PERSEPHONE",
-    "media": "Atlas",
     "url": "https://www.youtube.com/watch?v=XJ9MOXT4Pg8",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Atlas",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/29c4b72ae526423975a30d45ccf7b232/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/29c4b72ae526423975a30d45ccf7b232/250x250-000000-80-0-0.jpg",
+    "album": "Atlas"
   },
   {
     "title": "PETRICHOR / CIRCLES",
-    "media": "Atlas",
     "url": "https://www.youtube.com/results?search_query=PETRICHOR%20/%20CIRCLES%20Sam%20Bowman%20audio",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Atlas",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/29c4b72ae526423975a30d45ccf7b232/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/29c4b72ae526423975a30d45ccf7b232/250x250-000000-80-0-0.jpg",
+    "album": "Atlas"
   },
   {
     "title": "SUNDIAL KING",
-    "media": "Atlas",
     "url": "https://www.youtube.com/watch?v=mm6Zf14zhX4",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Atlas",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/73df1ab833896dcaf84aa6e96db8166c/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/73df1ab833896dcaf84aa6e96db8166c/250x250-000000-80-0-0.jpg",
+    "album": "Atlas"
   },
   {
     "title": "TAILSPIN / INTERROBANG?!",
-    "media": "Atlas",
     "url": "https://www.youtube.com/results?search_query=TAILSPIN%20/%20INTERROBANG%3F%21%20Sam%20Bowman%20audio",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Atlas",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/29c4b72ae526423975a30d45ccf7b232/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/29c4b72ae526423975a30d45ccf7b232/250x250-000000-80-0-0.jpg",
+    "album": "Atlas"
   },
   {
     "title": "TITAN",
-    "media": "Atlas",
     "url": "https://www.youtube.com/watch?v=dMmxbbDcqxs",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Atlas",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/27259e674e7cbba96056a25d2d8f5bac/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/27259e674e7cbba96056a25d2d8f5bac/250x250-000000-80-0-0.jpg",
+    "album": "Atlas"
   },
   {
     "title": "UNDERSUN",
-    "media": "Atlas",
     "url": "https://www.youtube.com/watch?v=3Slr0Q_0MaU",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Atlas",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/29c4b72ae526423975a30d45ccf7b232/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/29c4b72ae526423975a30d45ccf7b232/250x250-000000-80-0-0.jpg",
+    "album": "Atlas"
   },
   {
     "title": "WE'RE NOT REALLY STRANGERS",
-    "media": "Atlas",
     "url": "https://www.youtube.com/watch?v=3j3fRsOP0ww",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Atlas",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/d46f154a0df27282af81d11217d5792b/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/d46f154a0df27282af81d11217d5792b/250x250-000000-80-0-0.jpg",
+    "album": "Atlas"
   },
   {
     "title": "a ghost story",
-    "media": "Ghost",
     "url": "https://www.youtube.com/watch?v=dMmxbbDcqxs",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Ghost",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/58fd2db783301a9b227169f5482db07c/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/58fd2db783301a9b227169f5482db07c/250x250-000000-80-0-0.jpg",
+    "album": "Ghost"
   },
   {
     "title": "can you hear them",
-    "media": "Ghost",
     "url": "https://www.youtube.com/watch?v=-JZQ3CWghKw",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Ghost",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/58fd2db783301a9b227169f5482db07c/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/58fd2db783301a9b227169f5482db07c/250x250-000000-80-0-0.jpg",
+    "album": "Ghost"
   },
   {
     "title": "garden king",
-    "media": "Ghost",
     "url": "https://www.youtube.com/watch?v=zigsZZagrU0",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Ghost",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/dd836c74830649ac18d9a7fcfba7e4b2/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/dd836c74830649ac18d9a7fcfba7e4b2/250x250-000000-80-0-0.jpg",
+    "album": "Ghost"
   },
   {
     "title": "hero",
-    "media": "Ghost",
     "url": "https://www.youtube.com/watch?v=QnKRK5HUjJQ",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Ghost",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/3b5a9d3da3c9f5d190f36220a35d7717/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/3b5a9d3da3c9f5d190f36220a35d7717/250x250-000000-80-0-0.jpg",
+    "album": "Ghost"
   },
   {
     "title": "i ain't worried about a thing",
-    "media": "Ghost",
     "url": "https://www.youtube.com/watch?v=DEKPgd0oTCI",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Ghost",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/87f0c5eb8407f71d99fe1d081c1da1e9/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/87f0c5eb8407f71d99fe1d081c1da1e9/250x250-000000-80-0-0.jpg",
+    "album": "Ghost"
   },
   {
     "title": "let all mortal flesh keep silence",
-    "media": "Ghost",
     "url": "https://www.youtube.com/watch?v=mUWt6S-OzHs",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Ghost",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/75e749db8a4c5c8dc6f821f5c208db1a/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/75e749db8a4c5c8dc6f821f5c208db1a/250x250-000000-80-0-0.jpg",
+    "album": "Ghost"
   },
   {
     "title": "pantego",
-    "media": "Ghost",
     "url": "https://www.youtube.com/watch?v=Loh3NfRHcDo",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Ghost",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/58fd2db783301a9b227169f5482db07c/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/58fd2db783301a9b227169f5482db07c/250x250-000000-80-0-0.jpg",
+    "album": "Ghost"
   },
   {
     "title": "rose-colored glasses",
-    "media": "Ghost",
     "url": "https://www.youtube.com/watch?v=mJEZtbroSlc",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Ghost",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/ac5677b34ddff8f4c1c6ccf62fea1232/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/ac5677b34ddff8f4c1c6ccf62fea1232/250x250-000000-80-0-0.jpg",
+    "album": "Ghost"
   },
   {
     "title": "still burning",
-    "media": "Ghost",
     "url": "https://www.youtube.com/watch?v=sGY2q8bs25g",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Ghost",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/58fd2db783301a9b227169f5482db07c/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/58fd2db783301a9b227169f5482db07c/250x250-000000-80-0-0.jpg",
+    "album": "Ghost"
   },
   {
     "title": "vagabond",
-    "media": "Ghost",
     "url": "https://www.youtube.com/watch?v=2MVkJjM4APQ",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Ghost",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/58fd2db783301a9b227169f5482db07c/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/58fd2db783301a9b227169f5482db07c/250x250-000000-80-0-0.jpg",
+    "album": "Ghost"
   },
   {
     "title": "vintage vice",
-    "media": "Ghost",
     "url": "https://www.youtube.com/watch?v=JNWZ4gevp-Q",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Ghost",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/2771be9fb1b9fa731a4b18df651d8087/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/2771be9fb1b9fa731a4b18df651d8087/250x250-000000-80-0-0.jpg",
+    "album": "Ghost"
   },
   {
     "title": "whisper",
-    "media": "Ghost",
     "url": "https://www.youtube.com/watch?v=_P47Diq3e1w",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Ghost",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/731623382ff0d59352c5f6fa6f6df516/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/731623382ff0d59352c5f6fa6f6df516/250x250-000000-80-0-0.jpg",
+    "album": "Ghost"
   },
   {
     "title": "whisper (Matthew Parker Remix)",
-    "media": "Ghost",
     "url": "https://www.youtube.com/watch?v=otq5m35Jld4",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Ghost",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/7acdfc30e367ca7861d58006757e51af/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/7acdfc30e367ca7861d58006757e51af/250x250-000000-80-0-0.jpg",
+    "album": "Ghost"
   },
   {
     "title": "whoosh",
-    "media": "Ghost",
     "url": "https://www.youtube.com/watch?v=c5P8zyKCoVY",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Ghost",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/f6453e6a8c03c8d0f1bb873c0b0239bb/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/f6453e6a8c03c8d0f1bb873c0b0239bb/250x250-000000-80-0-0.jpg",
+    "album": "Ghost"
   },
   {
     "title": "wisteria",
-    "media": "Ghost",
     "url": "https://www.youtube.com/watch?v=U7_6QgGZpzw",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "album",
-      "game": "Ghost",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/0e970647a8931ca33ac270803da59a0f/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/0e970647a8931ca33ac270803da59a0f/250x250-000000-80-0-0.jpg",
+    "album": "Ghost"
   },
   {
     "title": "Daydream",
-    "media": "fake strong",
     "url": "https://www.youtube.com/watch?v=91KGSnwn7sQ",
-    "tags": {
-      "year": 2022,
-      "console": "Xander Sallows",
-      "series": "ep",
-      "game": "fake strong",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/5acd709a59af25f8c8c5b1987e1c337d/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/5acd709a59af25f8c8c5b1987e1c337d/250x250-000000-80-0-0.jpg",
+    "album": "fake strong"
   },
   {
     "title": "Daydream (Blanket Fort Version)",
-    "media": "fake strong",
     "url": "https://www.youtube.com/watch?v=hB6sBaMlWc4",
-    "tags": {
-      "year": 2022,
-      "console": "Xander Sallows",
-      "series": "ep",
-      "game": "fake strong",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/6bb47beafc80c110edebabb99c63c622/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/6bb47beafc80c110edebabb99c63c622/250x250-000000-80-0-0.jpg",
+    "album": "fake strong"
   },
   {
     "title": "Someone (Matias Ruiz Remix)",
-    "media": "fake strong",
     "url": "https://www.youtube.com/watch?v=CR5i7GlzEIk",
-    "tags": {
-      "year": 2022,
-      "console": "Xander Sallows",
-      "series": "ep",
-      "game": "fake strong",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/6bb47beafc80c110edebabb99c63c622/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/6bb47beafc80c110edebabb99c63c622/250x250-000000-80-0-0.jpg",
+    "album": "fake strong"
   },
   {
     "title": "Who's That Guy?",
-    "media": "fake strong",
     "url": "https://www.youtube.com/watch?v=G9htETiJOoU",
-    "tags": {
-      "year": 2022,
-      "console": "Xander Sallows",
-      "series": "ep",
-      "game": "fake strong",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/6bb47beafc80c110edebabb99c63c622/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/6bb47beafc80c110edebabb99c63c622/250x250-000000-80-0-0.jpg",
+    "album": "fake strong"
   },
   {
     "title": "fake strong",
-    "media": "fake strong",
     "url": "https://www.youtube.com/watch?v=IgDoiWL105Y",
-    "tags": {
-      "year": 2022,
-      "console": "Xander Sallows",
-      "series": "ep",
-      "game": "fake strong",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/6bb47beafc80c110edebabb99c63c622/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/6bb47beafc80c110edebabb99c63c622/250x250-000000-80-0-0.jpg",
+    "album": "fake strong"
   },
   {
     "title": "someone",
-    "media": "fake strong",
     "url": "https://www.youtube.com/watch?v=SOUo8msF0rU",
-    "tags": {
-      "year": 2022,
-      "console": "Xander Sallows",
-      "series": "ep",
-      "game": "fake strong",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/6bb47beafc80c110edebabb99c63c622/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/6bb47beafc80c110edebabb99c63c622/250x250-000000-80-0-0.jpg",
+    "album": "fake strong"
   },
   {
     "title": "i ain't worried (Nitro X Remix)",
-    "media": "Of Fire and Phantoms (The Remixes)",
     "url": "https://www.youtube.com/watch?v=8rRQBb-LEgY",
-    "tags": {
-      "year": 2023,
-      "console": "Sam Bowman",
-      "series": "ep",
-      "game": "Of Fire and Phantoms (The Remixes)",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/6d35687a9b596c71c853533334e6f689/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/6d35687a9b596c71c853533334e6f689/250x250-000000-80-0-0.jpg",
+    "album": "Of Fire and Phantoms (The Remixes)"
   },
   {
     "title": "icarus (phantom version)",
-    "media": "Of Fire and Phantoms (The Remixes)",
     "url": "https://www.youtube.com/watch?v=8Gq8Uq3cruA",
-    "tags": {
-      "year": 2023,
-      "console": "Sam Bowman",
-      "series": "ep",
-      "game": "Of Fire and Phantoms (The Remixes)",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/04518306071f74655ee5ff62a43bb803/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/04518306071f74655ee5ff62a43bb803/250x250-000000-80-0-0.jpg",
+    "album": "Of Fire and Phantoms (The Remixes)"
   },
   {
     "title": "let all mortal flesh keep silence (BYG86 Remix)",
-    "media": "Of Fire and Phantoms (The Remixes)",
     "url": "https://www.youtube.com/watch?v=-3-46tSs9C0",
-    "tags": {
-      "year": 2023,
-      "console": "Sam Bowman",
-      "series": "ep",
-      "game": "Of Fire and Phantoms (The Remixes)",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/09a6c1866547cba84c6b0a0b76506c56/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/09a6c1866547cba84c6b0a0b76506c56/250x250-000000-80-0-0.jpg",
+    "album": "Of Fire and Phantoms (The Remixes)"
   },
   {
     "title": "pantego (Matias Ruiz Remix)",
-    "media": "Of Fire and Phantoms (The Remixes)",
     "url": "https://www.youtube.com/results?search_query=pantego%20%28Matias%20Ruiz%20Remix%29%20Sam%20Bowman%20audio",
-    "tags": {
-      "year": 2023,
-      "console": "Sam Bowman",
-      "series": "ep",
-      "game": "Of Fire and Phantoms (The Remixes)",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/09a6c1866547cba84c6b0a0b76506c56/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/09a6c1866547cba84c6b0a0b76506c56/250x250-000000-80-0-0.jpg",
+    "album": "Of Fire and Phantoms (The Remixes)"
   },
   {
     "title": "smoke (phantom version)",
-    "media": "Of Fire and Phantoms (The Remixes)",
     "url": "https://www.youtube.com/watch?v=8Gq8Uq3cruA",
-    "tags": {
-      "year": 2023,
-      "console": "Sam Bowman",
-      "series": "ep",
-      "game": "Of Fire and Phantoms (The Remixes)",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/78c067e7c5320e9d92a184e58a2b818f/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/78c067e7c5320e9d92a184e58a2b818f/250x250-000000-80-0-0.jpg",
+    "album": "Of Fire and Phantoms (The Remixes)"
   },
   {
     "title": "whisper (BOUE Remix)",
-    "media": "Of Fire and Phantoms (The Remixes)",
     "url": "https://www.youtube.com/watch?v=Ndv1_juBz8k",
-    "tags": {
-      "year": 2023,
-      "console": "Sam Bowman",
-      "series": "ep",
-      "game": "Of Fire and Phantoms (The Remixes)",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/d4246eedf53cc516c50136ad51c26dc8/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/d4246eedf53cc516c50136ad51c26dc8/250x250-000000-80-0-0.jpg",
+    "album": "Of Fire and Phantoms (The Remixes)"
   },
   {
     "title": "Crowley",
-    "media": "Legend of Max",
     "url": "https://www.youtube.com/watch?v=rikTE3-yGEY",
-    "tags": {
-      "year": 2024,
-      "console": "Sam Bowman",
-      "series": "ep",
-      "game": "Legend of Max",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/90d222547306ba75470324c1d50bc150/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/90d222547306ba75470324c1d50bc150/250x250-000000-80-0-0.jpg",
+    "album": "Legend of Max"
   },
   {
     "title": "Daybreaker",
-    "media": "Legend of Max",
     "url": "https://www.youtube.com/watch?v=7mdF2FwR0p4",
-    "tags": {
-      "year": 2024,
-      "console": "Sam Bowman",
-      "series": "ep",
-      "game": "Legend of Max",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/90d222547306ba75470324c1d50bc150/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/90d222547306ba75470324c1d50bc150/250x250-000000-80-0-0.jpg",
+    "album": "Legend of Max"
   },
   {
     "title": "El Dorado",
-    "media": "Legend of Max",
     "url": "https://www.youtube.com/watch?v=vXNtju4VFm4",
-    "tags": {
-      "year": 2024,
-      "console": "Sam Bowman",
-      "series": "ep",
-      "game": "Legend of Max",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/90d222547306ba75470324c1d50bc150/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/90d222547306ba75470324c1d50bc150/250x250-000000-80-0-0.jpg",
+    "album": "Legend of Max"
   },
   {
     "title": "Oh Wonder",
-    "media": "Legend of Max",
     "url": "https://www.youtube.com/watch?v=8JPFxUYl6XE",
-    "tags": {
-      "year": 2024,
-      "console": "Sam Bowman",
-      "series": "ep",
-      "game": "Legend of Max",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/90d222547306ba75470324c1d50bc150/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/90d222547306ba75470324c1d50bc150/250x250-000000-80-0-0.jpg",
+    "album": "Legend of Max"
   },
   {
     "title": "Your Eyes",
-    "media": "Legend of Max",
     "url": "https://www.youtube.com/watch?v=hpDwsVv_wJk",
-    "tags": {
-      "year": 2024,
-      "console": "Sam Bowman",
-      "series": "ep",
-      "game": "Legend of Max",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/90d222547306ba75470324c1d50bc150/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/90d222547306ba75470324c1d50bc150/250x250-000000-80-0-0.jpg",
+    "album": "Legend of Max"
   },
   {
     "title": "The Breath of Heaven",
-    "media": "The Breath of Heaven",
     "url": "https://www.youtube.com/watch?v=YuFdQ_bg9Oo",
-    "tags": {
-      "year": 2019,
-      "console": "Jared Young",
-      "series": "single",
-      "game": "The Breath of Heaven",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/1f058ff1d0577b4f908f23c909609419/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/1f058ff1d0577b4f908f23c909609419/250x250-000000-80-0-0.jpg",
+    "album": "The Breath of Heaven"
   },
   {
     "title": "Don't Need Perfect (Remix)",
-    "media": "Don't Need Perfect (Remix)",
     "url": "https://www.youtube.com/watch?v=OEydsmexIOs",
-    "tags": {
-      "year": 2020,
-      "console": "Xander Sallows",
-      "series": "single",
-      "game": "Don't Need Perfect (Remix)",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/904b57e1962b1142a7202c5a73434ad3/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/904b57e1962b1142a7202c5a73434ad3/250x250-000000-80-0-0.jpg",
+    "album": "Don't Need Perfect (Remix)"
   },
   {
     "title": "Broken Clarity (Sam Bowman Remix)",
-    "media": "Broken Clarity (Sam Bowman Remix)",
     "url": "https://www.youtube.com/watch?v=EM71VEoqnH8",
-    "tags": {
-      "year": 2021,
-      "console": "Adam Paddock",
-      "series": "single",
-      "game": "Broken Clarity (Sam Bowman Remix)",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/716ed31f5eefc1527d4999b17d2caa9e/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/716ed31f5eefc1527d4999b17d2caa9e/250x250-000000-80-0-0.jpg",
+    "album": "Broken Clarity (Sam Bowman Remix)"
   },
   {
     "title": "Cloudburst",
-    "media": "Cloudburst",
     "url": "https://www.youtube.com/watch?v=l5e6UG6WpjA",
-    "tags": {
-      "year": 2021,
-      "console": "Sam Bowman",
-      "series": "single",
-      "game": "Cloudburst",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/01a879d9b3cefb1b1a820309c84e3d5c/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/01a879d9b3cefb1b1a820309c84e3d5c/250x250-000000-80-0-0.jpg",
+    "album": "Cloudburst"
   },
   {
     "title": "I GET THIS?",
-    "media": "I GET THIS?",
     "url": "https://www.youtube.com/watch?v=upuQ5OwNJc8",
-    "tags": {
-      "year": 2021,
-      "console": "Xander Sallows",
-      "series": "single",
-      "game": "I GET THIS?",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/62e93d9ad346cec42a9cd7a614f076dd/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/62e93d9ad346cec42a9cd7a614f076dd/250x250-000000-80-0-0.jpg",
+    "album": "I GET THIS?"
   },
   {
     "title": "Someone (Remix)",
-    "media": "Someone (Remix)",
     "url": "https://www.youtube.com/watch?v=CR5i7GlzEIk",
-    "tags": {
-      "year": 2021,
-      "console": "Xander Sallows",
-      "series": "single",
-      "game": "Someone (Remix)",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/6bb47beafc80c110edebabb99c63c622/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/6bb47beafc80c110edebabb99c63c622/250x250-000000-80-0-0.jpg",
+    "album": "Someone (Remix)"
   },
   {
     "title": "Always Will Be",
-    "media": "Always Will Be",
     "url": "https://www.youtube.com/watch?v=68hXsJNTlz8",
-    "tags": {
-      "year": 2022,
-      "console": "Christian Singleton",
-      "series": "single",
-      "game": "Always Will Be",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/debaf76ee1752b3595a460678f2504cd/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/debaf76ee1752b3595a460678f2504cd/250x250-000000-80-0-0.jpg",
+    "album": "Always Will Be"
   },
   {
     "title": "Burn Like Embers (Re-Ignited)",
-    "media": "Burn Like Embers (Re-Ignited)",
     "url": "https://www.youtube.com/watch?v=jadV7_SE51U",
-    "tags": {
-      "year": 2022,
-      "console": "Matthew Parker",
-      "series": "single",
-      "game": "Burn Like Embers (Re-Ignited)",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/be495e165ee4c39427c19ad106dcf781/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/be495e165ee4c39427c19ad106dcf781/250x250-000000-80-0-0.jpg",
+    "album": "Burn Like Embers (Re-Ignited)"
   },
   {
     "title": "Sonho Alto (Remix)",
-    "media": "Sonho Alto (Remix)",
     "url": "https://www.youtube.com/watch?v=2MBVBwvw07w",
-    "tags": {
-      "year": 2022,
-      "console": "BOUE",
-      "series": "single",
-      "game": "Sonho Alto (Remix)",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/b18ae88401f682df4518935a967eef20/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/b18ae88401f682df4518935a967eef20/250x250-000000-80-0-0.jpg",
+    "album": "Sonho Alto (Remix)"
   },
   {
     "title": "Anchor",
-    "media": "Anchor",
     "url": "https://www.youtube.com/watch?v=or_MDJnmihc",
-    "tags": {
-      "year": 2023,
-      "console": "Sam Bowman",
-      "series": "single",
-      "game": "Anchor",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/b14c3f248e1158db90a6d28504dc05de/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/b14c3f248e1158db90a6d28504dc05de/250x250-000000-80-0-0.jpg",
+    "album": "Anchor"
   },
   {
     "title": "Won't Stop",
-    "media": "Won't Stop",
     "url": "https://www.youtube.com/watch?v=qHMhT8q7zlw",
-    "tags": {
-      "year": 2023,
-      "console": "JOSHUA LAZER",
-      "series": "single",
-      "game": "Won't Stop",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/c21560b39c581fc75220b8f1e01ff56a/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/c21560b39c581fc75220b8f1e01ff56a/250x250-000000-80-0-0.jpg",
+    "album": "Won't Stop"
   },
   {
     "title": "afraid of the dark (remix)",
-    "media": "afraid of the dark (remix)",
     "url": "https://www.youtube.com/watch?v=gKkWV5EhUys",
-    "tags": {
-      "year": 2023,
-      "console": "Xander Sallows",
-      "series": "single",
-      "game": "afraid of the dark (remix)",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/bccfce2318e251fcefc1375586a83417/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/bccfce2318e251fcefc1375586a83417/250x250-000000-80-0-0.jpg",
+    "album": "afraid of the dark (remix)"
   },
   {
     "title": "chaotic neutral (from Young Pop Renegades, Vol. 2)",
-    "media": "chaotic neutral (from Young Pop Renegades, Vol. 2)",
     "url": "https://www.youtube.com/watch?v=vosTrza7uX4",
-    "tags": {
-      "year": 2023,
-      "console": "Matthew Parker",
-      "series": "single",
-      "game": "chaotic neutral (from Young Pop Renegades, Vol. 2)",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/a6b3f324578fc1df5f5cb4d93e883c25/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/a6b3f324578fc1df5f5cb4d93e883c25/250x250-000000-80-0-0.jpg",
+    "album": "chaotic neutral (from Young Pop Renegades, Vol. 2)"
   },
   {
     "title": "headroom (from Young Pop Renegades, Vol. 2)",
-    "media": "headroom (from Young Pop Renegades, Vol. 2)",
     "url": "https://www.youtube.com/watch?v=MTWNV-PavoM",
-    "tags": {
-      "year": 2023,
-      "console": "Sam Bowman",
-      "series": "single",
-      "game": "headroom (from Young Pop Renegades, Vol. 2)",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/8d951c7d648a051c7207d1dd4f166c0e/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/8d951c7d648a051c7207d1dd4f166c0e/250x250-000000-80-0-0.jpg",
+    "album": "headroom (from Young Pop Renegades, Vol. 2)"
   },
   {
     "title": "slam the brakes! (from Young Pop Renegades, Vol. 2)",
-    "media": "slam the brakes! (from Young Pop Renegades, Vol. 2)",
     "url": "https://www.youtube.com/watch?v=OMNkwd8Q8NE",
-    "tags": {
-      "year": 2023,
-      "console": "Jacob Stanifer",
-      "series": "single",
-      "game": "slam the brakes! (from Young Pop Renegades, Vol. 2)",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/2ad18cd380b4af3cef3be36959dbbc10/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/2ad18cd380b4af3cef3be36959dbbc10/250x250-000000-80-0-0.jpg",
+    "album": "slam the brakes! (from Young Pop Renegades, Vol. 2)"
   },
   {
     "title": "thanks (from Young Pop Renegades Vol. 2)",
-    "media": "thanks (from Young Pop Renegades Vol. 2)",
     "url": "https://www.youtube.com/watch?v=J83pjO9y-yo",
-    "tags": {
-      "year": 2023,
-      "console": "Matthew Parker",
-      "series": "single",
-      "game": "thanks (from Young Pop Renegades Vol. 2)",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/13dbd481fb595b4892805f55185f9c45/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/13dbd481fb595b4892805f55185f9c45/250x250-000000-80-0-0.jpg",
+    "album": "thanks (from Young Pop Renegades Vol. 2)"
   },
   {
     "title": "Weatherboy",
-    "media": "Weatherboy",
     "url": "https://www.youtube.com/watch?v=yFFb9sBenyY",
-    "tags": {
-      "year": 2024,
-      "console": "Matthew Parker",
-      "series": "single",
-      "game": "Weatherboy",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/7b358195ca62f5d68483bcc881b6c2ec/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/7b358195ca62f5d68483bcc881b6c2ec/250x250-000000-80-0-0.jpg",
+    "album": "Weatherboy"
   },
   {
     "title": "know me",
-    "media": "know me",
     "url": "https://www.youtube.com/watch?v=NSXRd4lstE4",
-    "tags": {
-      "year": 2024,
-      "console": "Christian Singleton",
-      "series": "single",
-      "game": "know me",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/6837053e2b3f9da0113b9e7ba5fa7d30/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/6837053e2b3f9da0113b9e7ba5fa7d30/250x250-000000-80-0-0.jpg",
+    "album": "know me"
   },
   {
     "title": "ride of my life (Single Version)",
-    "media": "ride of my life (Single Version)",
     "url": "https://www.youtube.com/watch?v=7MPn8v8tP0w",
-    "tags": {
-      "year": 2024,
-      "console": "JSteph",
-      "series": "single",
-      "game": "ride of my life (Single Version)",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/847f79143cdd439ae366a91e7c6a48b0/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/847f79143cdd439ae366a91e7c6a48b0/250x250-000000-80-0-0.jpg",
+    "album": "ride of my life (Single Version)"
   },
   {
     "title": "If I'm Breathing",
-    "media": "If I'm Breathing",
     "url": "https://www.youtube.com/watch?v=2o7ef6BqSsU",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "single",
-      "game": "If I'm Breathing",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/973d40e70d19efec366ffb64a279a2df/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/973d40e70d19efec366ffb64a279a2df/250x250-000000-80-0-0.jpg",
+    "album": "If I'm Breathing"
   },
   {
     "title": "My Father's World",
-    "media": "My Father's World",
     "url": "https://www.youtube.com/watch?v=9G97-ziVA00",
-    "tags": {
-      "year": 2025,
-      "console": "Sam Bowman",
-      "series": "single",
-      "game": "My Father's World",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/d13a06e89d84334a8fb2cb5b0f0e09f7/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/d13a06e89d84334a8fb2cb5b0f0e09f7/250x250-000000-80-0-0.jpg",
+    "album": "My Father's World"
   },
   {
     "title": "Waiting Room",
-    "media": "Waiting Room",
     "url": "https://www.youtube.com/watch?v=6ptnGYY-O34",
-    "tags": {
-      "year": 2025,
-      "console": "Chris Howland",
-      "series": "single",
-      "game": "Waiting Room",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/5f407705ed32bdc2cf82472da18c88a6/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/5f407705ed32bdc2cf82472da18c88a6/250x250-000000-80-0-0.jpg",
+    "album": "Waiting Room"
   },
   {
     "title": "Waiting Room - Instrumental",
-    "media": "Waiting Room",
     "url": "https://www.youtube.com/watch?v=8YyhPGJQf5I",
-    "tags": {
-      "year": 2025,
-      "console": "Chris Howland",
-      "series": "single",
-      "game": "Waiting Room",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/5f407705ed32bdc2cf82472da18c88a6/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/5f407705ed32bdc2cf82472da18c88a6/250x250-000000-80-0-0.jpg",
+    "album": "Waiting Room"
   },
   {
     "title": "WHOOSH (The Preacher's Version)",
-    "media": "WHOOSH (The Preacher's Version)",
     "url": "https://www.youtube.com/results?search_query=WHOOSH%20%28The%20Preacher%27s%20Version%29%20Sam%20Bowman%20audio",
-    "tags": {
-      "year": 2026,
-      "console": "Sam Bowman",
-      "series": "single",
-      "game": "WHOOSH (The Preacher's Version)",
-      "game-genre": "Pop"
-    },
-    "art": "https://cdn-images.dzcdn.net/images/cover/f6453e6a8c03c8d0f1bb873c0b0239bb/250x250-000000-80-0-0.jpg"
+    "art": "https://cdn-images.dzcdn.net/images/cover/f6453e6a8c03c8d0f1bb873c0b0239bb/250x250-000000-80-0-0.jpg",
+    "album": "WHOOSH (The Preacher's Version)"
   }
 ]
