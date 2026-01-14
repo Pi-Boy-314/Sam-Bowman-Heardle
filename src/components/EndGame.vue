@@ -75,7 +75,7 @@ async function share() {
 
   const title = `${settings["heardle-name"]} Heardle`;
   const scoreText = won ? `${guesses}/${total}` : `X/${total}`;
-  const text = `${settings["heardle-name"]} Heardle #${listIndex + 1} ${scoreText}\n${pattern}`;
+  const text = `${settings["heardle-name"]} Heardle #${listIndex + 1} - ${scoreText}\n${pattern}`;
 
   // populate modal; do NOT invoke navigator.share to avoid opening the OS share window
   shareText.value = text;
