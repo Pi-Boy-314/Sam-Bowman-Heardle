@@ -10,7 +10,7 @@ import settings from "@/settings/settings.json"
 import { currentGameState, SelectedMusic, ParseStringWithVariable } from "@/main";
 import {onMounted} from "vue";
 
-const searcher = new FuzzySearch(music, ["title", "media"], {
+const searcher = new FuzzySearch(music, ["title", "album"], {
   sort: true
 });
 
@@ -32,11 +32,11 @@ function GetAutocomplete(){
 
   for(const item of result){
     const li = document.createElement("li");
-    li.innerHTML = item.title + " - " + item.media;
+    li.innerHTML = item.title + " — " + item.album;
 
     li.onclick = ()=>{
       autoCompleteList.setAttribute("hidden", "");
-      document.getElementById("autoComplete").value = item.title + " - " + item.media;
+      document.getElementById("autoComplete").value = item.title + " — " + item.album;
     }
 
     autoCompleteList.appendChild(li);
@@ -49,7 +49,7 @@ function OnSubmit(){
   }
 
   let equalto = music.find((el)=>{
-    return (el.title + " - " + el.media) == document.getElementById("autoComplete").value;
+    return (el.title + " — " + el.album) == document.getElementById("autoComplete").value;
   })
 
   currentGameState.value.guessed.push(

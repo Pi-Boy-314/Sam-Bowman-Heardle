@@ -6,7 +6,7 @@ import IconEmptyBox from "@/components/icons/IconEmptyBox.vue";
 
 const props = defineProps<{
   active?: boolean;
-  music?: { name: string, "equal-to": {"title": string, "url": string, "tags": []}, isCorrect: boolean };
+  music?: { name: string, "equal-to": { title: string, url: string, album: string }, isCorrect: boolean };
 }>();
 
 console.log("")
@@ -21,33 +21,13 @@ console.log("")
     <IconEmptyBox v-else-if="music != undefined" class="cross"/>
 
     <div class="name-parent" v-if="music != undefined">
-      <div class="name font-medium" v-if="music.name != 'Skipped'"> {{ music.name }} </div>
+      <div class="name font-medium" v-if="music.name != 'Skipped'">
+        {{ music.name }}<span v-if="music['equal-to'] && music['equal-to'].album"> — {{ music['equal-to'].album }}</span>
+      </div>
       <div class="skipped" v-else >  {{ ParseStringWithVariable(settings["phrases"]["skipped"]) }}  </div>
     </div>
 
-    <div style="max-width: 60%;" v-if="music != undefined && music['equal-to'] != undefined && music.isCorrect">
-      <div>
-        <div v-for="tag in settings['tag-list']">
-          {{ tag["display-name"] }}:
-
-          <span v-if="tag.type == 'equal'">
-              {{ ((music['equal-to'].tags[tag.name] === SelectedMusic.tags[tag.name]) ? tag.word['='] : tag.word['!=']).replace("{guess}", music['equal-to'].tags[tag.name]) }}
-            </span>
-
-          <span v-if="tag.type == 'tag-value'">
-              {{ tag.word['*'].replace("{guess}", music['equal-to'].tags[tag.name]).replace("{value}", tag.word[SelectedMusic.tags[tag.name].toString()]) }}
-            </span>
-
-          <span v-if="tag.type == 'plus-minus' && (music['equal-to'].tags[tag.name] === SelectedMusic.tags[tag.name]) ">
-              {{ tag.word['='].replace("{guess}", music['equal-to'].tags[tag.name]) }}
-            </span>
-
-          <span v-else-if="tag.type == 'plus-minus' && (music['equal-to'].tags[tag.name] !== SelectedMusic.tags[tag.name])">
-              {{ ((music['equal-to'].tags[tag.name] > SelectedMusic.tags[tag.name]) ? tag.word['+'] : tag.word['-']).replace("{guess}", music['equal-to'].tags[tag.name]) }} }}
-            </span>
-        </div>
-      </div>
-    </div>
+    <!-- Tag logic removed: no songs have tags -->
   </div>
 </template>
 

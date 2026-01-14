@@ -43,10 +43,10 @@ async function share() {
   // Compute today's day id and listIndex using Central Time (same logic as main.js)
   function daysSinceStartInCT(startISO) {
     const fmt = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Chicago', year: 'numeric', month: 'numeric', day: 'numeric' });
-    const partsNow = fmt.formatToParts(new Date()).reduce((acc, p) => { acc[p.type] = p.value; return acc; }, {});
+    const partsNow = fmt.formatToParts(new Date()).reduce((acc: Record<string, string>, p) => { acc[p.type] = p.value; return acc; }, {});
 
     const startDate = startISO ? new Date(startISO) : new Date(0);
-    const partsStart = fmt.formatToParts(startDate).reduce((acc, p) => { acc[p.type] = p.value; return acc; }, {});
+    const partsStart = fmt.formatToParts(startDate).reduce((acc: Record<string, string>, p) => { acc[p.type] = p.value; return acc; }, {});
 
     const nowMidCTUtc = Date.UTC(Number(partsNow.year), Number(partsNow.month) - 1, Number(partsNow.day));
     const startMidCTUtc = Date.UTC(Number(partsStart.year), Number(partsStart.month) - 1, Number(partsStart.day));
