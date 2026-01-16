@@ -1,11 +1,15 @@
 <script setup lang="ts">
-import IconInfo from "@/components/icons/IconInfo.vue"
+
+import IconInfo from "@/components/icons/IconInfo.vue";
 import IconHeart from "@/components/icons/IconHeart.vue";
 import IconAbout from "@/components/icons/IconAbout.vue";
+import IconStats from "@/components/icons/IconStats.vue";
+
 
 import AboutModal from "@/components/Modals/AboutModal.vue";
 import SupportModal from "@/components/Modals/SupportModal.vue";
 import TutorialModal from "@/components/Modals/TutorialModal.vue";
+import StatsModal from "@/components/Modals/StatsModal.vue";
 
 import settings from "@/settings/settings.json"
 
@@ -29,6 +33,9 @@ const emit = defineEmits(['create-modal']);
           Heardle
         </h1>
         <div class="button-container justify-end">
+          <button @click="emit('create-modal', StatsModal)">
+            <IconStats/>
+          </button>
           <button @click="emit('create-modal', TutorialModal)">
             <IconAbout/>
           </button>
@@ -59,6 +66,7 @@ const emit = defineEmits(['create-modal']);
 
     button{
       border: none;
+      cursor: pointer;
     }
   }
 

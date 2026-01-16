@@ -21,7 +21,7 @@ onMounted(()=>{
         <IconMusicNote/>
       </div>
       <div>
-        <p>Listen to the intro, then find the correct {{ settings["heardle-name"] }} song in the list.</p>
+        <p>Listen to the intro, then type to find the correct {{ settings["heardle-name"] }} song in the list.</p>
       </div>
     </div>
     <div class="info">
@@ -29,7 +29,7 @@ onMounted(()=>{
         <IconSpeaker/>
       </div>
       <div>
-        <p>Skipped or incorrect attempts unlock more of the intro</p>
+        <p>Skipped or incorrect attempts unlock more of the song</p>
       </div>
     </div>
     <div class="info">
