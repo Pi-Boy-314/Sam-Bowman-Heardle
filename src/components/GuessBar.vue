@@ -98,7 +98,7 @@ function Verify(){
         <div id="autocomplete-wrapper">
           <IconMagnifyingGlass class="glass"/>
           <input class="font-input" id="autoComplete" type="search" dir="ltr" spellcheck="false" autocorrect="off" autocomplete="off" autocapitalize="none"
-                 aria-controls="autoComplete_list_1" aria-autocomplete="both" placeholder="Know it? Search for the game / title"
+                 aria-controls="autoComplete_list_1" aria-autocomplete="both" placeholder="Know it? Search for the song title"
                  role="combobox" aria-owns="autoComplete_list" aria-haspopup="true" aria-expanded="false"
                  @input="GetAutocomplete">
           <ul id="autoComplete_list" role="listbox" hidden=""></ul>

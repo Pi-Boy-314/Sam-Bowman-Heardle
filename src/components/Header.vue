@@ -46,9 +46,6 @@ const emit = defineEmits(['create-modal']);
 </template>
 
 <style scoped lang="scss">
-  header {
-  }
-
   .main-container{
     display: flex;
     justify-content: space-evenly;
