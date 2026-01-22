@@ -8,9 +8,31 @@ export class YoutubeMusicPlayer extends Player {
     Playing: boolean
     Volume: number
     dummyAudio: HTMLAudioElement
+    startSeconds: number
 
     constructor(url: string) {
         super(url);
+
+        const parseStartSeconds = (value: string | null): number => {
+            if (!value) return 0;
+
+            // Support plain seconds ("7"), suffixed seconds ("7s"), or h/m/s combos ("1m30s").
+            const numericOnly = Number(value.replace(/[^0-9]/g, ""));
+            if (!Number.isNaN(numericOnly) && numericOnly > 0) return numericOnly;
+
+            const parts = value.match(/(?:(\d+)h)?(?:(\d+)m)?(?:(\d+)s?)?/i);
+            if (!parts) return 0;
+
+            const hours = parts[1] ? Number(parts[1]) * 3600 : 0;
+            const minutes = parts[2] ? Number(parts[2]) * 60 : 0;
+            const seconds = parts[3] ? Number(parts[3]) : 0;
+
+            return hours + minutes + seconds;
+        };
+
+        const normalizedUrl = url.startsWith("http") ? url : `https://${url}`;
+        let videoId = "";
+        this.startSeconds = 0;
 
         const main = document.getElementsByTagName("main")[0];
         const container = document.createElement("div");
@@ -62,10 +84,18 @@ export class YoutubeMusicPlayer extends Player {
             });
         }, 100);
 
-        var videoURL = url;
-        var splited = videoURL.split("v=");
-        var splitedAgain = splited[1].split("&");
-        var videoId = splitedAgain[0]; 
+        try {
+            const parsed = new URL(normalizedUrl);
+            videoId = parsed.searchParams.get("v") ?? "";
+            this.startSeconds = parseStartSeconds(parsed.searchParams.get("t") ?? parsed.searchParams.get("start"));
+        } catch (err) {
+            // Fallback to the previous simple parsing if URL construction fails (e.g., malformed input)
+            const videoURL = url;
+            const splited = videoURL.split("v=");
+            const splitedAgain = splited[1]?.split("&");
+            videoId = splitedAgain ? splitedAgain[0] : "";
+            this.startSeconds = 0;
+        }
 
         this.p = PlayerFactory("video-player", {
             videoId: videoId,
@@ -91,6 +121,7 @@ export class YoutubeMusicPlayer extends Player {
     {
         this.dummyAudio.play().catch(e => console.log('Dummy audio play failed:', e));
         if(started_callback != null) started_callback();
+        this.p.seekTo(this.startSeconds, true);
         this.p.playVideo();
     }
 
@@ -99,7 +130,7 @@ export class YoutubeMusicPlayer extends Player {
         let hasStarted = false;
         this.dummyAudio.play().catch(e => console.log('Dummy audio play failed:', e));
 
-        this.p.seekTo(0, true);
+        this.p.seekTo(this.startSeconds, true);
         let onPlay = (event)=>{
             if(event.data == PlayerStates.PLAYING && !hasStarted){
                 hasStarted = true;
@@ -126,7 +157,7 @@ export class YoutubeMusicPlayer extends Player {
         // Keep dummy audio playing to maintain media session control
         // Don't pause or reset it - we want it running continuously
         this.p.pauseVideo();
-        this.p.seekTo(0, true);
+        this.p.seekTo(this.startSeconds, true);
     }
 
     override async GetCurrentMusicTime(callback: (percentage: number)=>void)
@@ -134,7 +165,8 @@ export class YoutubeMusicPlayer extends Player {
         if(!this.Playing) callback(0);
 
         this.p.getCurrentTime().then((n)=>{
-            callback(n*1000);
+            const adjustedMs = Math.max(0, (n - this.startSeconds) * 1000);
+            callback(adjustedMs);
         })
     }
 
@@ -142,7 +174,8 @@ export class YoutubeMusicPlayer extends Player {
     {
         this.p.getDuration().then((n)=>{
             console.log("Length is : %d", n)
-            callback(n*1000);
+            const adjustedMs = Math.max(0, (n - this.startSeconds) * 1000);
+            callback(adjustedMs);
         })
     }
 
