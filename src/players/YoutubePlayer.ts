@@ -63,7 +63,7 @@ export class YoutubeMusicPlayer extends Player {
             const baseUrl = window.location.origin;
             navigator.mediaSession.metadata = new MediaMetadata({
                 title: 'Chapstick for Glue',
-                artist: 'Sam Bowman',
+                artist: 'Matthew Parker',
                 album: '',
                 artwork: [
                     { src: `${baseUrl}/favicon.ico`, sizes: '48x48', type: 'image/x-icon' },

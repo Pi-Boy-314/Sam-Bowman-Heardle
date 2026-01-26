@@ -9,27 +9,27 @@ onMounted(()=>{
 
 <template>  
   <div class="section">
-    <h3 class="section-title">Check Out Sam Bowman's Music</h3>
+    <h3 class="section-title">Check Out Matthew Parker's Music</h3>
     <div class="link-container">
       <div class="link-item">
         <span class="link-label">YouTube</span>
-        <a href="https://www.youtube.com/@sambowmanmusic" target="_blank" rel="noopener noreferrer">youtube.com/@sambowmanmusic</a>
+        <a href="https://www.youtube.com/@MatthewParkerTunes" target="_blank" rel="noopener noreferrer">youtube.com/@matthewparkermusic</a>
       </div>
       <div class="link-item">
         <span class="link-label">Spotify</span>
-        <a href="https://open.spotify.com/artist/4cRZTgXsG1S8tR5vtkUqxP" target="_blank" rel="noopener noreferrer">open.spotify.com/artist/4cRZTgXsG1S8tR5vtkUqxP</a>
+        <a href="https://open.spotify.com/artist/0QT3cPPXMGYtTG3kN8Ez54" target="_blank" rel="noopener noreferrer">open.spotify.com/artist/0QT3cPPXMGYtTG3kN8Ez54</a>
       </div>
       <div class="link-item">
         <span class="link-label">Apple Music</span>
-        <a href="https://music.apple.com/us/artist/sam-bowman/540311574" target="_blank" rel="noopener noreferrer">music.apple.com/us/artist/sam-bowman/540311574</a>
+        <a href="https://music.apple.com/us/artist/matthew-parker/79499070" target="_blank" rel="noopener noreferrer">music.apple.com/us/artist/matthew-parker/79499070</a>
       </div>
       <div class="link-item">
         <span class="link-label">Official Website</span>
-        <a href="https://sambowmanmusic.wixsite.com/sambowmanmusic" target="_blank" rel="noopener noreferrer">sambowmanmusic.wixsite.com/sambowmanmusic</a>
+        <a href="https://matthewparkermusic.com" target="_blank" rel="noopener noreferrer">matthewparkermusic.com</a>
       </div>
       <div class="link-item">
         <span class="link-label">Join the Discord</span>
-        <a href="https://discord.gg/tpqcmE8Gwv" target="_blank" rel="noopener noreferrer">https://discord.gg/tpqcmE8Gwv</a>
+        <a href="https://discord.gg/5QRXAcUMkN" target="_blank" rel="noopener noreferrer">https://discord.gg/5QRXAcUMkN</a>
       </div>
     </div>
 

@@ -9,7 +9,7 @@ onMounted(()=>{
 <template>
   <div class="section">
     <h3 class="section-title">About This Game</h3>
-    <p>Sam Bowman Heardle is a version of Heardle that features songs from Sam Bowman's discography.</p>
+    <p>Matthew Parker Heardle is a version of Heardle that features songs from Matthew Parker's discography.</p>
   </div>
   
   <div class="section">

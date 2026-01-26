@@ -1,6 +1,6 @@
 {
-  "heardle-name": "Sam Bowman",
-  "start-date": "2026-01-14T06:00:00.000Z",
+  "heardle-name": "Matthew Parker",
+  "start-date": "2026-01-26T06:00:00.000Z",
   "guess-number": 6,
   "times": [
     1, 2, 4, 8, 16, 32
@@ -77,6 +77,6 @@
   },
 
   "!COMMENT!": "Variant link is  \"infinite\" when infinite is false, or \"base game\" when infinite is true",
-  "variant-link": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-  "song-list-link": "https://raw.githubusercontent.com/pi-boy-314/sam-bowman-heardle/refs/heads/main/src/settings/music.json"
+  "variant-link": "https://www.youtube.com/watch?v=ksX_ClqqpQs",
+  "song-list-link": "https://raw.githubusercontent.com/pi-boy-314/matthew-parker-heardles/refs/heads/main/src/settings/music.json"
 }
