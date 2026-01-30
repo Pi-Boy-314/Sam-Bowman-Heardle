@@ -1,4 +1,4 @@
-import {Player} from "@/players/PlayerBase";
+import { Player } from "./PlayerBase";
 
 export class LocalAudioPlayer extends Player {
     audio: HTMLAudioElement
@@ -41,9 +41,9 @@ export class LocalAudioPlayer extends Player {
         if ('mediaSession' in navigator) {
             const baseUrl = window.location.origin;
             navigator.mediaSession.metadata = new MediaMetadata({
-                title: 'Sam Bowman Heardle',
-                artist: 'Guess the song!',
-                album: 'Music Quiz Game',
+                title: 'Chapstick for Glue',
+                artist: 'Sam Bowman',
+                album: 'Chapstick for Glue',
                 artwork: [
                     { src: `${baseUrl}/favicon.ico`, sizes: '48x48', type: 'image/x-icon' },
                     { src: `${baseUrl}/favicon.ico`, sizes: '96x96', type: 'image/x-icon' },
@@ -93,7 +93,7 @@ export class LocalAudioPlayer extends Player {
 
     override PlayMusic(timer: number, started_callback: () => void | null, finished_callback: () => void | null): void {
         let hasStarted = false;
-        let timeoutId: NodeJS.Timeout;
+        let timeoutId: ReturnType<typeof setTimeout>;
 
         const onPlay = () => {
             if (!hasStarted) {

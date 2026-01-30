@@ -738,13 +738,13 @@ Here's a complete minimal example:
 [
   {
     "title": "Adventure",
-    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "url": "https://www.youtube.com/watch?v=8y6sONFwOSw",
     "album": "Adventure"
   },
   {
-    "title": "Daydreamer",
-    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "album": "Daydreamer"
+    "title": "If I Were A Dinosaur",
+    "url": "https://www.youtube.com/watch?v=BVPfUP_Fnxs",
+    "album": "Walmart"
   }
 ]
 ```
@@ -804,13 +804,13 @@ If hosting multiple artists:
 
 **Option 2: Git Branches**
 - Keep `main` branch for Sam Bowman
-- Create `taylor-swift`, `ariana-grande` branches
+- Create `matthew-parker`, `xander-sallows` branches
 - Switch branches to customize
 - Easier to maintain common code
 
 **Option 3: Environment-Based** (advanced)
 - Create multiple `music-{artist}.json` files
-- Load based on environment variable: `ARTIST_NAME=taylor-swift`
+- Load based on environment variable: `ARTIST_NAME=matthew-parker`
 - Single deployment, multiple artists via URL parameter
 - Requires code changes to `main.js`
 
