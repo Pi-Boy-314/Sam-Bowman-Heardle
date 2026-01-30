@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sam-bowman-heardle.vercel.app/sitemap.xml
