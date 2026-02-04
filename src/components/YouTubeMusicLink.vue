@@ -1,28 +1,28 @@
 <script setup lang="ts">
 import { SelectedMusic } from '@/main';
-import SoundcloudLogo from "@/components/icons/SoundcloudLogo.vue";
+import YouTubeLogo from "@/components/icons/YouTubeLogo.vue";
 
 const props = defineProps({
   "isWon": Boolean,
-})
+});
 </script>
 
 <template>
-  <div class="soundcloud-box">
+  <div class="youtube-box">
     <a :href="SelectedMusic.url" :title="'Listen to ' + SelectedMusic.album + ' - ' + SelectedMusic.title + ' on YouTube'" >
       <div class="title-card" :won="isWon ? 'true' : 'false'">
         <img v-if="SelectedMusic.art" :src="SelectedMusic.art" alt="Album art" class="album-art">
         <div class="title">
-          <p class="title-text font-medium"> {{ SelectedMusic.title }} </p>
+          <p class="title-text font-medium"> {{ SelectedMusic.title }} - {{ SelectedMusic.album }}</p>
         </div>
-        <SoundcloudLogo/>
+        <YouTubeLogo class="youtube-icon"/>
       </div>
     </a>
   </div>
 </template>
 
 <style scoped lang="scss">
-.soundcloud-box {
+.youtube-box {
   padding: 0.75rem 0.75rem 0;
 
   a{
@@ -68,6 +68,10 @@ const props = defineProps({
       border-radius: 4px;
       object-fit: cover;
       margin-right: 0.5rem;
+    }
+
+    .youtube-icon {
+      color: var(--color-fg);
     }
   }
 }
