@@ -7,8 +7,9 @@ export class YoutubeMusicPlayer extends Player {
     p: YouTubePlayer
     Playing: boolean
     Volume: number
-    dummyAudio: HTMLAudioElement
     startSeconds: number
+    private playerStateInterval: ReturnType<typeof setInterval> | null = null
+    private container: HTMLElement | null = null
 
     constructor(url: string) {
         super(url);
@@ -35,45 +36,21 @@ export class YoutubeMusicPlayer extends Player {
         this.startSeconds = 0;
 
         const main = document.getElementsByTagName("main")[0];
-        const container = document.createElement("div");
-        container.classList.add("hidden");
+        this.container = document.createElement("div");
+        this.container.classList.add("hidden");
 
         const iframe = document.createElement("div");
         iframe.id = "video-player";
         iframe.className = "hidden";
-        container.appendChild(iframe);
+        this.container.appendChild(iframe);
 
-        main.appendChild(container);
+        main.appendChild(this.container);
 
-        // Create a looping silent audio element to control media session
-        this.dummyAudio = new Audio();
-        this.dummyAudio.loop = true;
-        this.dummyAudio.volume = 0.001; // Very low but not zero - iOS needs non-zero volume
-        // Use a longer silent audio file (1 second) for better iOS compatibility
-        this.dummyAudio.src = 'data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAIlYAAESsAAACABAAZGF0YQAAAAA=';
-        
-        // Important: set preload to ensure audio is ready
-        this.dummyAudio.preload = 'auto';
-        
-        // Start playing immediately (will work after user interaction)
-        this.dummyAudio.play().catch(() => {
-            // If autoplay is blocked, it will play when PlayMusic is called
-            console.log('Dummy audio autoplay blocked, will play on first interaction');
-        });
-        
-        // Set media session metadata for the dummy audio with more aggressive iOS handling
+        // Set initial media session metadata for the YouTube player
         this.updateMediaSession();
         
-        // Continuously re-assert media session control (especially important for iOS)
-        // iOS can "steal" the media session when YT iframe plays, so we re-apply every 200ms
-        setInterval(() => {
-            if (this.dummyAudio.paused) {
-                this.dummyAudio.play().catch(() => {});
-            }
-            this.updateMediaSession();
-        }, 200);
-
-        window.setInterval(()=>{
+        // Track player state for UI updates
+        this.playerStateInterval = window.setInterval(()=>{
             this.p.getPlayerState().then((state)=>{
                 this.Playing = (state == 1);
             });
@@ -129,12 +106,12 @@ export class YoutubeMusicPlayer extends Player {
                 ]
             });
             
-            // Set action handlers - these keep media session "claimed" by our dummy audio
+            // Set action handlers for media session
             navigator.mediaSession.setActionHandler('play', () => {
-                this.dummyAudio.play().catch(() => {});
+                this.p.playVideo().catch(() => {});
             });
             navigator.mediaSession.setActionHandler('pause', () => {
-                // Don't actually pause - keep it running
+                this.p.pauseVideo();
             });
             navigator.mediaSession.setActionHandler('seekbackward', null);
             navigator.mediaSession.setActionHandler('seekforward', null);
@@ -145,35 +122,14 @@ export class YoutubeMusicPlayer extends Player {
 
     override PlayMusicUntilEnd(started_callback: () => void | null, finished_callback: () => void | null): void
     {
-        // Ensure dummy audio is playing before starting YT (critical for iOS)
-        this.dummyAudio.play().catch(e => console.log('Dummy audio play failed:', e));
-        
-        // Re-assert media session right before playback
-        this.updateMediaSession();
-        
         if(started_callback != null) started_callback();
         this.p.seekTo(this.startSeconds, true);
-        
-        // Mute YT briefly on start to prevent media session steal, then restore volume
-        this.p.mute();
-        this.p.playVideo().then(() => {
-            // Small delay then unmute - gives dummy audio time to claim media session
-            setTimeout(() => {
-                this.p.unMute();
-                this.p.setVolume(this.Volume);
-            }, 100);
-        });
+        this.p.playVideo();
     }
 
     override PlayMusic(timer: number, started_callback: () => void | null, finished_callback: () => void | null): void
     {
         let hasStarted = false;
-        
-        // Ensure dummy audio is playing before starting YT (critical for iOS)
-        this.dummyAudio.play().catch(e => console.log('Dummy audio play failed:', e));
-        
-        // Re-assert media session right before playback
-        this.updateMediaSession();
 
         this.p.seekTo(this.startSeconds, true);
         
@@ -193,23 +149,11 @@ export class YoutubeMusicPlayer extends Player {
         }
 
         this.p.on("stateChange", onPlay);
-
-        // Mute YT briefly on start to prevent media session steal, then restore volume
-        this.p.mute();
-        this.p.playVideo().then(() => {
-            // Small delay then unmute - gives dummy audio time to claim media session
-            setTimeout(() => {
-                this.p.unMute();
-                this.p.setVolume(this.Volume);
-            }, 100);
-        });
-
+        this.p.playVideo();
     }
 
     override StopMusic(): void
     {
-        // Keep dummy audio playing to maintain media session control
-        // Don't pause or reset it - we want it running continuously
         this.p.pauseVideo();
         this.p.seekTo(this.startSeconds, true);
     }
@@ -240,5 +184,30 @@ export class YoutubeMusicPlayer extends Player {
     override SetVolume(volume: number): void {
         this.Volume = volume
         this.p.setVolume(this.Volume)
+    }
+
+    override Destroy(): void {
+        // Clear stored interval
+        if (this.playerStateInterval !== null) {
+            clearInterval(this.playerStateInterval);
+            this.playerStateInterval = null;
+        }
+        
+        // Stop the YouTube player
+        this.p.stopVideo();
+        this.p.seekTo(this.startSeconds, true);
+        
+        // Remove the container if it exists
+        if (this.container && this.container.parentElement) {
+            this.container.parentElement.removeChild(this.container);
+            this.container = null;
+        }
+        
+        // Reset media session
+        if ('mediaSession' in navigator) {
+            navigator.mediaSession.metadata = null;
+            navigator.mediaSession.setActionHandler('play', null);
+            navigator.mediaSession.setActionHandler('pause', null);
+        }
     }
 }

@@ -159,4 +159,25 @@ export class LocalAudioPlayer extends Player {
         this.Volume = volume;
         this.audio.volume = volume / 100;
     }
+
+    override Destroy(): void {
+        // Stop playback
+        this.audio.pause();
+        this.audio.currentTime = this.startSeconds;
+        
+        // Remove all event listeners to prevent memory leaks
+        this.audio.removeEventListener('play', this.audio.onplay as any);
+        this.audio.removeEventListener('pause', this.audio.onpause as any);
+        this.audio.removeEventListener('ended', this.audio.onended as any);
+        
+        // Clear all listeners by replacing the audio element
+        this.audio.src = '';
+        
+        // Reset media session
+        if ('mediaSession' in navigator) {
+            navigator.mediaSession.metadata = null;
+            navigator.mediaSession.setActionHandler('play', null);
+            navigator.mediaSession.setActionHandler('pause', null);
+        }
+    }
 }

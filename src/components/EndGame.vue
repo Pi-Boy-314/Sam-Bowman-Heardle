@@ -1,7 +1,6 @@
 <script setup lang="ts">
 
-import { ref } from 'vue';
-import SoundcloudMusicLink from "@/components/SoundcloudMusicLink.vue";
+import { ref, onMounted, onUnmounted } from 'vue';
 import GuessSummary from "@/components/GuessSummary.vue";
 import IconShare from "@/components/icons/IconShare.vue";
 
@@ -14,6 +13,8 @@ import TransportBar from "@/components/TransportBar.vue";
 const copied = ref(false);
 const showShareModal = ref(false);
 const shareText = ref('');
+
+let timerInterval: ReturnType<typeof setInterval> | null = null;
 
 async function copyShareText() {
   try {
@@ -96,7 +97,7 @@ async function share() {
 }
 
 // calculate time
-setInterval(()=>{
+timerInterval = setInterval(()=>{
   const timer = document.getElementById("timer");
 
   // Get current time and tomorrow's date in Central Time
@@ -147,13 +148,18 @@ setInterval(()=>{
   timer.innerHTML = `${hours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${timeBetweenInSecond.toString().padStart(2, "0")}`;
 
 }, 300);
+
+onUnmounted(() => {
+  if (timerInterval !== null) {
+    clearInterval(timerInterval);
+    timerInterval = null;
+  }
+});
 </script>
 
 <template>
   <div class="max-w-screen-sm main-container">
     <div v-if="currentGameState.guessed.length > 0" class="end-content">
-      <SoundcloudMusicLink :is-won="currentGameState.guessed[currentGameState.guessed.length-1].isCorrect"/>
-      
       <div class="summary-container">
         <p class="guess-number font-big"> 
           {{ currentGameState.guessed[currentGameState.guessed.length-1].isCorrect ? currentGameState.guessed.length.toString() : '0' }} 

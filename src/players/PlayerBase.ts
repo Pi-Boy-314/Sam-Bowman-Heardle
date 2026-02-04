@@ -15,4 +15,6 @@ export abstract class Player {
 
     abstract GetVolume(): number;
     abstract SetVolume(volume: number): void;
+
+    abstract Destroy(): void;
 }
