@@ -442,7 +442,7 @@
   },
   {
     "title": "Daybreaker",
-    "url": "https://www.youtube.com/watch?v=7mdF2FwR0p4",
+    "url": "https://www.youtube.com/watch?v=ZsNibbnpiI0",
     "art": "https://cdn-images.dzcdn.net/images/cover/90d222547306ba75470324c1d50bc150/250x250-000000-80-0-0.jpg",
     "album": "Legend of Max",
     "id": "daybreaker"
@@ -519,7 +519,7 @@
   },
   {
     "title": "Your Eyes",
-    "url": "https://www.youtube.com/watch?v=hpDwsVv_wJk",
+    "url": "https://www.youtube.com/watch?v=--SGDYCv_DU",
     "art": "https://cdn-images.dzcdn.net/images/cover/90d222547306ba75470324c1d50bc150/250x250-000000-80-0-0.jpg",
     "album": "Legend of Max",
     "id": "your-eyes"
@@ -612,7 +612,147 @@
     "title": "WHOOSH (The Preacher's Version)",
     "url": "https://www.youtube.com/watch?v=bbYBgkmNcME",
     "art": "https://cdn-images.dzcdn.net/images/cover/f6453e6a8c03c8d0f1bb873c0b0239bb/250x250-000000-80-0-0.jpg",
-    "album": "Pickleball Song",
+    "album": "Of Specters and Stars (The Remixes)",
     "id": "whoosh-the-preachers-version"
+  },
+  {
+    "title": "(Yellow)",
+    "url": "https://www.youtube.com/watch?v=o51Sb4T1jPE",
+    "art": "https://cdn-images.dzcdn.net/images/cover/ef39e0d3b6e91b2d18342047045bd700/250x250-000000-80-0-0.jpg",
+    "album": "Single",
+    "id": "yellow"
+  },
+  {
+    "title": "How the Mighty Fall",
+    "url": "https://www.youtube.com/watch?v=UPVlRE76ZgA",
+    "art": "https://cdn-images.dzcdn.net/images/cover/ef39e0d3b6e91b2d18342047045bd700/250x250-000000-80-0-0.jpg",
+    "album": "Single",
+    "id": "how-the-mighty-fall"
+  },
+  {
+    "title": "EMPTY CHAIR V2",
+    "url": "https://www.youtube.com/watch?v=FPEiHQXWr8o",
+    "art": "https://cdn-images.dzcdn.net/images/cover/2f7af8e392d1c7ebd7c50260955c9e78/250x250-000000-80-0-0.jpg",
+    "album": "Single",
+    "id": "empty-chair-v2"
+  },
+  {
+    "title": "I THOUGHT WE'D HAVE MORE TIME (SAM BOWMAN REMIX)",
+    "url": "https://www.youtube.com/watch?v=neA_fcLuALE",
+    "art": "https://cdn-images.dzcdn.net/images/cover/2f7af8e392d1c7ebd7c50260955c9e78/250x250-000000-80-0-0.jpg",
+    "album": "Single",
+    "id": "i-thought-wed-have-more-time-sam-bowman-remix"
+  },
+  {
+    "title": "No, Not One",
+    "url": "https://www.youtube.com/watch?v=Zw-tK5GKNao",
+    "art": "https://cdn-images.dzcdn.net/images/cover/6fab5f84424a76f1f80b08d2e52ba8bd/250x250-000000-80-0-0.jpg",
+    "album": "Single",
+    "id": "no-not-one"
+  },
+  {
+    "title": "The Church's One Foundation",
+    "url": "https://www.youtube.com/watch?v=xluK2np4FyQ",
+    "art": "https://cdn-images.dzcdn.net/images/cover/b50d31896494c75f3ecca48270ff4a92/250x250-000000-80-0-0.jpg",
+    "album": "Single",
+    "id": "the-churchs-one-foundation"
+  },
+  {
+    "title": "(Indigo)",
+    "url": "https://www.youtube.com/watch?v=N5ZxO8AbRY4",
+    "art": "https://cdn-images.dzcdn.net/images/cover/1a746f9093ed59f2b70ce9656abf2b3c/250x250-000000-80-0-0.jpg",
+    "album": "Single",
+    "id": "indigo"
+  },
+  {
+    "title": "Knights of Pantego",
+    "url": "https://www.youtube.com/watch?v=UI7yqxJIeVI",
+    "art": "https://cdn-images.dzcdn.net/images/cover/1a746f9093ed59f2b70ce9656abf2b3c/250x250-000000-80-0-0.jpg",
+    "album": "Single",
+    "id": "knights-of-pantego"
+  },
+  {
+    "title": "CRESCERE (BLVRS Remix)",
+    "url": "https://www.youtube.com/watch?v=3nSoLB_IFdU",
+    "art": "https://cdn-images.dzcdn.net/images/cover/e4133c8b628b04b881336c2c78d5a0fc/250x250-000000-80-0-0.jpg",
+    "album": "Of Specters and Stars (The Remixes)",
+    "id": "crescere-blvrs-remix"
+  },
+  {
+    "title": "IS THIS WHAT IT MEANS TO BE ALIVE (Jeremy James Whitaker Remix)",
+    "url": "https://www.youtube.com/watch?v=1bx3luYPy2Y",
+    "art": "https://cdn-images.dzcdn.net/images/cover/e4133c8b628b04b881336c2c78d5a0fc/250x250-000000-80-0-0.jpg",
+    "album": "Of Specters and Stars (The Remixes)",
+    "id": "is-this-what-it-means-to-be-alive-jeremy-james-whitaker-remix"
+  },
+  {
+    "title": "GODS OF DAMASCUS (Hibdonian Remix)",
+    "url": "https://www.youtube.com/watch?v=nBFDBBTa350",
+    "art": "https://cdn-images.dzcdn.net/images/cover/e4133c8b628b04b881336c2c78d5a0fc/250x250-000000-80-0-0.jpg",
+    "album": "Of Specters and Stars (The Remixes)",
+    "id": "gods-of-damascus-hibdonian-remix"
+  },
+  {
+    "title": "WISTERIA (The Preacher's Version)",
+    "url": "https://www.youtube.com/watch?v=DWP0sacBt50",
+    "art": "https://cdn-images.dzcdn.net/images/cover/e4133c8b628b04b881336c2c78d5a0fc/250x250-000000-80-0-0.jpg",
+    "album": "Of Specters and Stars (The Remixes)",
+    "id": "wisteria-the-preachers-version"
+  },
+  {
+    "title": "ROSE-COLORED GLASSES (The Preacher's Version)",
+    "url": "https://www.youtube.com/watch?v=tEBn7I0Tmgg",
+    "art": "https://cdn-images.dzcdn.net/images/cover/e4133c8b628b04b881336c2c78d5a0fc/250x250-000000-80-0-0.jpg",
+    "album": "Of Specters and Stars (The Remixes)",
+    "id": "rose-colored-glasses-the-preachers-version"
+  },
+  {
+    "title": "Gravity Strikes Again",
+    "url": "https://www.youtube.com/watch?v=ohxNphNMjOc",
+    "art": "https://cdn-images.dzcdn.net/images/cover/f656e3eaf5c0e850602363c865116c24/250x250-000000-80-0-0.jpg",
+    "album": "Single",
+    "id": "gravity-strikes-again"
+  },
+  {
+    "title": "a COLOSSUS, alone",
+    "url": "https://www.youtube.com/watch?v=-10vY75ER2w",
+    "art": "https://cdn-images.dzcdn.net/images/cover/d348ce0e4859b08266b9e11d2674615e/250x250-000000-80-0-0.jpg",
+    "album": "Single",
+    "id": "a-colossus-alone"
+  },
+  {
+    "title": "guide us home (feat. Jaisua) (Sam Bowman Remix)",
+    "url": "https://www.youtube.com/watch?v=OIceqVi6xk0",
+    "art": "https://cdn-images.dzcdn.net/images/cover/d348ce0e4859b08266b9e11d2674615e/250x250-000000-80-0-0.jpg",
+    "album": "Single",
+    "id": "guide-us-home-feat-jaisua-sam-bowman-remix"
+  },
+  {
+    "title": "Waiting Room (Audicid Remix)",
+    "url": "https://www.youtube.com/watch?v=GRJMjWzgCzQ",
+    "art": "https://cdn-images.dzcdn.net/images/cover/71731d84becea4f330c53a9786be42ef/250x250-000000-80-0-0.jpg",
+    "album": "Waiting Room Remixes",
+    "id": "waiting-room-audicid-remix"
+  },
+  {
+    "title": "Waiting Room (Jeremy James Whitaker Remix)",
+    "url": "https://www.youtube.com/watch?v=elXygCxhZzU",
+    "art": "https://cdn-images.dzcdn.net/images/cover/71731d84becea4f330c53a9786be42ef/250x250-000000-80-0-0.jpg",
+    "album": "Waiting Room Remixes",
+    "id": "waiting-room-jeremy-james-whitaker-remix"
+  },
+  {
+    "title": "Waiting Room (Missionworldshaker Remix)",
+    "url": "https://www.youtube.com/watch?v=Zne_tsRsqBI",
+    "art": "https://cdn-images.dzcdn.net/images/cover/71731d84becea4f330c53a9786be42ef/250x250-000000-80-0-0.jpg",
+    "album": "Waiting Room Remixes",
+    "id": "waiting-room-missionworldshaker-remix"
+  },
+  {
+    "title": "Waiting Room (surfer boi Remix)",
+    "url": "https://www.youtube.com/watch?v=YfZ80P1DSw4",
+    "art": "https://cdn-images.dzcdn.net/images/cover/71731d84becea4f330c53a9786be42ef/250x250-000000-80-0-0.jpg",
+    "album": "Waiting Room Remixes",
+    "id": "waiting-room-surfer-boi-remix"
   }
 ]
