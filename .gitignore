@@ -29,6 +29,10 @@ coverage
 *.sw?
 
 *.tsbuildinfo
+
+# Python virtualenv for tools/ scripts (yt-dlp)
+.venv
+
 # Audio files - keep locally but don't commit to GitHub
 # Upload to Vercel's public/audio directory instead
 public/audio/*.mp3

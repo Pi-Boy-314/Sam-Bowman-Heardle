@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import settings from "@/settings/settings.json";
-import { currentGameState } from "@/main";
+import { currentGameState } from "@/game";
 
 function getType(i: number) : String{
   let guess = currentGameState.value.guessed[i-1];
@@ -16,7 +16,7 @@ function getType(i: number) : String{
 
 <template>
   <div class="container flex justify-center my-2">
-    <div v-for="i in settings['guess-number']" v-if="currentGameState !== undefined" class="guess-value" :type="getType(i)" ></div>
+    <div v-for="i in settings['guess-number']" :key="i" class="guess-value" :type="getType(i)"></div>
   </div>
 </template>
 

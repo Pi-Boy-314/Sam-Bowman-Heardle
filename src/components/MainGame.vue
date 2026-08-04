@@ -1,12 +1,11 @@
 <script setup lang="ts">
 
 import GuessBar from "@/components/GuessBar.vue";
-import IconArrowDown from "@/components/icons/IconArrowDown.vue";
 import TransportBar from "@/components/TransportBar.vue";
 import GuessField from "@/components/GuessField.vue";
 import settings from "@/settings/settings.json";
 
-import { currentGameState, ParseStringWithVariable } from "@/main";
+import { currentGameState } from "@/game";
 
 </script>
 
@@ -47,26 +46,5 @@ import { currentGameState, ParseStringWithVariable } from "@/main";
 }
 .guess-container {
   padding: 0.75rem;
-}
-
-.list-text{
-  text-align: center;
-
-  padding: 0.75rem;
-  align-items: center;
-  flex-direction: column;
-  display: flex;
-
-  a {
-    color: var(--color-link);
-  }
-
-  svg{
-    margin-top: 0.5rem;
-  }
-}
-
-.arrow {
-  margin-top: 0.5rem;
 }
 </style>

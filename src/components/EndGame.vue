@@ -6,9 +6,8 @@ import GuessSummary from "@/components/GuessSummary.vue";
 import IconShare from "@/components/icons/IconShare.vue";
 
 import settings from "@/settings/settings.json"
-import music from "@/settings/music.json";
 
-import { currentGameState, ParseStringWithVariable, SelectedMusic } from "@/main";
+import { currentGameState, ParseStringWithVariable, dayIndex } from "@/game";
 import TransportBar from "@/components/TransportBar.vue";
 
 const copied = ref(false);
@@ -42,23 +41,6 @@ async function share() {
   const guesses = guessed.length;
   const won = guesses > 0 && guessed[guesses - 1].isCorrect;
 
-  // Compute today's day id and listIndex using Central Time (same logic as main.js)
-  function daysSinceStartInCT(startISO) {
-    const fmt = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Chicago', year: 'numeric', month: 'numeric', day: 'numeric' });
-    const partsNow = fmt.formatToParts(new Date()).reduce((acc: Record<string, string>, p) => { acc[p.type] = p.value; return acc; }, {});
-
-    const startDate = startISO ? new Date(startISO) : new Date(0);
-    const partsStart = fmt.formatToParts(startDate).reduce((acc: Record<string, string>, p) => { acc[p.type] = p.value; return acc; }, {});
-
-    const nowMidCTUtc = Date.UTC(Number(partsNow.year), Number(partsNow.month) - 1, Number(partsNow.day));
-    const startMidCTUtc = Date.UTC(Number(partsStart.year), Number(partsStart.month) - 1, Number(partsStart.day));
-
-    return Math.floor((nowMidCTUtc - startMidCTUtc) / 86400000);
-  }
-
-  const id = daysSinceStartInCT(settings["start-date"]);
-  const listIndex = id % music.length;
-
   // build emoji pattern (🟩 green for correct, 🟥 red for incorrect, ⬛ gray for skip, ⬜ white for unused)
   const total = settings["guess-number"] || 6;
   let pattern = '';
@@ -75,9 +57,8 @@ async function share() {
     }
   }
 
-  const title = `${settings["heardle-name"]} Heardle`;
   const scoreText = won ? `${guesses}/${total}` : `X/${total}`;
-  const text = `${settings["heardle-name"]} Heardle #${listIndex + 1} - ${scoreText}\n${pattern}`;
+  const text = `${settings["heardle-name"]} Heardle #${dayIndex + 1} - ${scoreText}\n${pattern}`;
 
   // populate modal; do NOT invoke navigator.share to avoid opening the OS share window
   shareText.value = text;
@@ -97,58 +78,51 @@ async function share() {
   showShareModal.value = true;
 }
 
-// calculate time
-timerInterval = setInterval(()=>{
+// Countdown to the next puzzle, which rolls over at midnight Central Time.
+//
+// The formatter is built once here rather than inside the tick: constructing an
+// Intl.DateTimeFormat is expensive, and the old code built two identical ones on
+// every one of its 300ms ticks.
+const ctFormatter = new Intl.DateTimeFormat('en-US', {
+  timeZone: 'America/Chicago',
+  year: 'numeric', month: 'numeric', day: 'numeric',
+  hour: 'numeric', minute: 'numeric', second: 'numeric',
+  hour12: false,
+});
+
+function updateTimer() {
   const timer = document.getElementById("timer");
+  if (!timer) return;
 
-  // Get current time and tomorrow's date in Central Time
   const now = new Date();
-  const fmt = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Chicago', year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: false });
-  
-  // Get tomorrow in CT by adding 24 hours and getting the date parts
-  const tomorrow = new Date(now.getTime() + 24 * 60 * 60 * 1000);
-  const partsTomorrow = fmt.formatToParts(tomorrow).reduce((acc: Record<string, string>, p) => { acc[p.type] = p.value; return acc; }, {});
-  
-  // Construct midnight tomorrow in CT as a UTC timestamp
-  const tomorrowMidnightCTUtc = Date.UTC(Number(partsTomorrow.year), Number(partsTomorrow.month) - 1, Number(partsTomorrow.day), 6, 0, 0, 0); // CT is UTC-6 (CST) or UTC-5 (CDT)
-  
-  // To get the correct offset, we need to create a date at midnight CT and check its UTC equivalent
-  // Create a formatter that gives us the time components in CT
-  const fmtTime = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Chicago', year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: false });
-  const partsNowCT = fmtTime.formatToParts(now).reduce((acc: Record<string, string>, p) => { acc[p.type] = p.value; return acc; }, {});
-  
-  // Calculate the next midnight in Central Time
-  const nowInCTUtc = Date.UTC(Number(partsNowCT.year), Number(partsNowCT.month) - 1, Number(partsNowCT.day), Number(partsNowCT.hour), Number(partsNowCT.minute), Number(partsNowCT.second));
-  const todayMidnightCTUtc = Date.UTC(Number(partsNowCT.year), Number(partsNowCT.month) - 1, Number(partsNowCT.day), 0, 0, 0, 0);
-  const tomorrowMidnightCTUtc2 = todayMidnightCTUtc + 24 * 60 * 60 * 1000;
-  
-  // Calculate offset between now in CT and now in UTC
+  const parts = ctFormatter.formatToParts(now).reduce((acc: Record<string, string>, p) => { acc[p.type] = p.value; return acc; }, {});
+
+  // Wall-clock "now" in CT, expressed as a UTC timestamp. Comparing it against
+  // the real timestamp yields the current CT offset, which handles DST without
+  // hardcoding UTC-5/UTC-6.
+  const nowInCTUtc = Date.UTC(Number(parts.year), Number(parts.month) - 1, Number(parts.day), Number(parts.hour), Number(parts.minute), Number(parts.second));
+  const todayMidnightCTUtc = Date.UTC(Number(parts.year), Number(parts.month) - 1, Number(parts.day));
   const offsetMs = now.getTime() - nowInCTUtc;
-  const nextMidnightCT = tomorrowMidnightCTUtc2 + offsetMs;
+  const nextMidnightCT = todayMidnightCTUtc + 24 * 60 * 60 * 1000 + offsetMs;
 
-  const timeBetween = nextMidnightCT - now.getTime();
+  const totalSeconds = Math.floor((nextMidnightCT - now.getTime()) / 1000);
 
-  let timeBetweenInSecond = Math.floor(timeBetween/1000)
-
-  if(timeBetweenInSecond <= 0) {
+  if (totalSeconds <= 0) {
     window.location.reload();
+    return;
   }
 
-  let hours = 0;
-  while(timeBetweenInSecond > (60*60)) {
-    hours += 1;
-    timeBetweenInSecond -= (60*60);
-  }
+  const hours = Math.floor(totalSeconds / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
 
-  let minutes = 0;
-  while(timeBetweenInSecond > (60)) {
-    minutes += 1;
-    timeBetweenInSecond -= (60);
-  }
+  timer.innerHTML = `${hours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+}
 
-  timer.innerHTML = `${hours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${timeBetweenInSecond.toString().padStart(2, "0")}`;
-
-}, 300);
+// Fill the countdown on mount so the placeholder in the template is never
+// visible; the interval then keeps it ticking once a second.
+onMounted(updateTimer);
+timerInterval = setInterval(updateTimer, 1000);
 
 onUnmounted(() => {
   if (timerInterval !== null) {

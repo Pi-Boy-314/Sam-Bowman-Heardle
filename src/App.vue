@@ -2,7 +2,7 @@
 // Component imports
 import Header from "@/components/Header.vue";
 import ModalBase from "@/components/Modals/ModalBase.vue";
-import {onMounted, onBeforeUnmount, ref, shallowRef} from "vue";
+import {onMounted, ref, shallowRef} from "vue";
 import TutorialModal from "@/components/Modals/TutorialModal.vue";
 
 // Vue Binding References
@@ -14,11 +14,8 @@ import themes from '@/settings/themes.json'
 import settings from "@/settings/settings.json"
 import MainGame from "@/components/MainGame.vue";
 
-import { currentGameState } from "@/main";
+import { currentGameState } from "@/game";
 import EndGame from "@/components/EndGame.vue";
-
-// CSS Variables
-const colors = {};
 
 // Modal function
 function openModal(modalComponent) {
@@ -41,8 +38,6 @@ onMounted(() => {
     if(themes[theme]["type"] === "url") value = "url('" + value + "')";
     if(themes[theme]["type"] === "var") value = "var(" + "--color-"+value + ")";
 
-    console.log(colorKey);
-
     r.style.setProperty(colorKey, value);
   }
 
@@ -52,9 +47,6 @@ onMounted(() => {
   }
 
   document.title = settings["heardle-name"] + " Heardle"
-});
-
-onBeforeUnmount(() => {
 });
 
 </script>

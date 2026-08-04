@@ -1,15 +1,13 @@
 <script setup lang="ts">
 import IconFailedCross from "@/components/icons/IconFailedCross.vue";
 import settings from "@/settings/settings.json"
-import { SelectedMusic, ParseStringWithVariable } from "@/main";
+import { SelectedMusic, ParseStringWithVariable } from "@/game";
 import IconEmptyBox from "@/components/icons/IconEmptyBox.vue";
 
 const props = defineProps<{
   active?: boolean;
   music?: { name: string, "equal-to": { title: string, url: string, album: string }, isCorrect: boolean };
 }>();
-
-console.log("")
 
 </script>
 

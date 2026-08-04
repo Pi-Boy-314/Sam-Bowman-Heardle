@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SelectedMusic } from '@/main';
+import { SelectedMusic } from '@/game';
 import YouTubeLogo from "@/components/icons/YouTubeLogo.vue";
 
 const props = defineProps({

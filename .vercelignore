@@ -1,0 +1,26 @@
+# Controls what `vercel --prod` uploads.
+#
+# This file exists so uploads do NOT fall back to .gitignore. That matters:
+# .gitignore excludes public/audio/*.mp3 (too large / not for GitHub), but those
+# clips MUST reach Vercel or /api/audio returns 404 for every song.
+#
+# Rule of thumb: audio is deliberately absent below. Do not add it.
+
+.git
+node_modules
+.venv
+dist
+dist-ssr
+coverage
+.vercel
+
+# Local tooling that has no business in a deployment
+tools
+scripts
+docs
+.vscode
+.github
+
+*.log
+.DS_Store
+.env*.local

@@ -7,7 +7,7 @@ import FuzzySearch from "fuzzy-search";
 import music from "@/settings/music.json"
 import settings from "@/settings/settings.json"
 
-import { currentGameState, SelectedMusic, ParseStringWithVariable } from "@/main";
+import { currentGameState, SelectedMusic, ParseStringWithVariable } from "@/game";
 import {onMounted} from "vue";
 
 const searcher = new FuzzySearch(music, ["title", "album"], {
@@ -73,6 +73,17 @@ function OnSubmit(){
   Verify();
 }
 
+function ClearInput(){
+  const inputEl = document.getElementById("autoComplete") as HTMLInputElement | null;
+  if (inputEl) {
+    inputEl.value = "";
+    inputEl.focus();
+  }
+
+  const listEl = document.getElementById('autoComplete_list');
+  if (listEl) listEl.setAttribute("hidden", "");
+}
+
 function OnSkip(){
   currentGameState.value.guessed.push(
       {
@@ -111,9 +122,9 @@ function Verify(){
                  role="combobox" aria-owns="autoComplete_list" aria-haspopup="true" aria-expanded="false"
                  @input="GetAutocomplete">
           <ul id="autoComplete_list" role="listbox" hidden=""></ul>
-          <div class="close">
+          <button type="button" class="close" aria-label="Clear search" @click="ClearInput">
             <IconCancel/>
-          </div>
+          </button>
         </div>
         <div class="button-container">
           <button class="skip" @click="OnSkip">
@@ -169,6 +180,15 @@ function Verify(){
   position: absolute;
   right: 0.75rem;
   top: 1rem;
+
+  /* Was a <div>; now a real <button> so it can be clicked and reached by
+     keyboard. Strip the default button chrome so it looks identical. */
+  padding: 0;
+  border: none;
+  background: none;
+  color: inherit;
+  line-height: 0;
+  cursor: pointer;
 }
 
 .glass {
