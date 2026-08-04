@@ -125,11 +125,50 @@ sudo apt-get install ffmpeg
 
 ---
 
+## Adding Newly Released Songs
+
+When Sam Bowman puts out new music, `tools/sync_music.py` finds it and adds it
+for you. You do not need to hand-edit `music.json`.
+
+```bash
+python tools/sync_music.py                    # dry run - show what's new
+python tools/sync_music.py --apply            # add the new tracks
+python tools/download_audio.py                # fetch their 32s clips
+```
+
+**What it does:**
+- Reads the artist's full release list from the Deezer API
+- Skips anything already present in `music.json`
+- Finds each new track on YouTube and fills in `title`, `url`, `art`, `album`, `id`
+- Prints a report and writes nothing unless you pass `--apply`
+
+**How it matches YouTube reliably.** It lists the artist's channel in one pass
+and matches against that, rather than running a per-track YouTube search —
+search returns unrelated videos surprisingly often. A match is only accepted
+when the normalized titles agree *and* the runtimes are within 12 seconds of
+Deezer's. Collabs hosted on a partner's channel (titled
+`Matthew Parker & Sam Bowman - ...`) are handled too. Anything it cannot match
+confidently is reported for you to add by hand rather than guessed at — a wrong
+URL means the wrong song plays.
+
+**Useful flags:**
+
+| Flag | Effect |
+|---|---|
+| `--since YYYY-MM-DD` | Only consider releases on/after this date (faster) |
+| `--apply` | Actually write to `music.json` |
+| `--verify` | Check every URL already in `music.json` still resolves |
+
+`--verify` is worth running occasionally: YouTube videos do get taken down, and
+a dead URL breaks both the clip download and the post-game reveal for that song.
+
+---
+
 ## Audio Download
 
 ### Download All Tracks
 
-Run this to download all 88 songs from YouTube:
+Run this to download every song in `music.json` from YouTube:
 
 ```bash
 python tools/download_audio.py
@@ -144,7 +183,8 @@ python tools/download_audio.py
 - Skips already-downloaded files (safe to re-run)
 - Displays progress and file sizes
 
-**Expected time:** 1-2 hours for 88 songs (~2.5GB total)
+**Expected time:** a few minutes for the full catalogue (~50MB total, since each
+file is trimmed to 32 seconds)
 
 **Audio files are NOT committed to git** — excluded in `.gitignore`. They're uploaded separately to Vercel during deployment.
 

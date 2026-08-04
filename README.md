@@ -10,6 +10,9 @@ A fork of [Heardle-Base](https://github.com/s4pph1r3-dev/Heardle-Base) customize
 # Install dependencies
 npm install
 
+# Add any newly released songs (dry run first, then --apply)
+python tools/sync_music.py
+
 # Download audio files
 python tools/download_audio.py
 
