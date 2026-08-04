@@ -60,7 +60,8 @@ from pathlib import Path
 
 # --- Configuration -----------------------------------------------------------
 
-DEEZER_ARTIST_ID = 11145178  # Sam Bowman
+ARTIST_NAME = "Sam Bowman"
+DEEZER_ARTIST_ID = 11145178
 YOUTUBE_CHANNEL = "https://www.youtube.com/channel/UC4-DeiRFx7RPhooKaFAYXdA"
 
 # A YouTube upload is accepted as "the same recording" only if its runtime is
@@ -76,6 +77,11 @@ MUSIC_JSON = PROJECT_ROOT / "src" / "settings" / "music.json"
 # Deezer lists a lot of duplicate/regional re-releases. Skip albums whose title
 # matches these (case-insensitive substring).
 ALBUM_SKIP = ()
+
+# Track titles to never add (case-insensitive substring). Empty here; the
+# Matthew Parker Heardle uses this to exclude instrumentals, whose backing track
+# is identical to the vocal version already in its list.
+TITLE_SKIP = ()
 
 
 # --- Helpers -----------------------------------------------------------------
@@ -111,6 +117,10 @@ def match_key(title):
     t = re.sub(r"\(from [^)]*\)", " ", t)
     t = re.sub(r"\[(official|lyric)[^\]]*\]", " ", t)
     t = re.sub(r"\((official|lyric|audio|visualizer)[^)]*\)", " ", t)
+    # Drop guest credits entirely, names included. music.json often stores a
+    # bare "Spark" where YouTube has "Spark (feat. Rapture Ruckus)"; keeping the
+    # guest's name would make those two titles never agree.
+    t = re.sub(r"[\(\[]\s*(feat|ft)\.?[^)\]]*[\)\]]", " ", t)
     t = t.replace("&", " and ")
     t = re.sub(r"\bfeat\.?\b|\bft\.?\b", " ", t)
     t = re.sub(r"[^a-z0-9]+", "", t)
@@ -185,6 +195,8 @@ def fetch_deezer_catalog(since=None):
         for tr in detail.get("tracks", {}).get("data", []):
             key = match_key(tr["title"])
             if key in seen:
+                continue
+            if any(s.lower() in tr["title"].lower() for s in TITLE_SKIP):
                 continue
             seen.add(key)
             tracks.append(
@@ -286,6 +298,69 @@ def pick(candidates, track):
 # --- Commands ----------------------------------------------------------------
 
 
+def url_alive(url):
+    """True if YouTube still serves this video."""
+    return bool(yt_dlp(["--skip-download", "--print", "%(id)s", url], timeout=90).strip())
+
+
+def cmd_repair(music, apply):
+    """
+    Find replacement URLs for entries whose video has been taken down.
+
+    Videos get removed, re-uploaded, or made private, which breaks both the clip
+    download and the post-game reveal for that song. Rather than hand-editing
+    URLs, this re-matches the dead entries against the artist's current channel
+    using the same title+duration rules as the sync.
+    """
+    print(f"Checking {len(music)} URLs...")
+    dead = [t for t in music if not t.get("url") or not url_alive(t["url"])]
+    print(f"  {len(dead)} dead\n")
+    if not dead:
+        print("✅ Nothing to repair.")
+        return 0
+
+    # Deezer runtimes let us reject a same-titled but different recording.
+    durations = {}
+    for alb in deezer(f"artist/{DEEZER_ARTIST_ID}/albums?limit=300").get("data", []):
+        for tr in deezer(f"album/{alb['id']}").get("tracks", {}).get("data", []):
+            durations.setdefault(match_key(tr["title"]), tr.get("duration"))
+        time.sleep(0.15)
+
+    print("Listing the artist's YouTube channel...")
+    channel = fetch_channel_videos()
+    print(f"  {len(channel)} videos\n")
+
+    fixed, unfixed = [], []
+    for track in dead:
+        probe = {"title": track["title"], "duration": durations.get(match_key(track["title"]))}
+        vid = pick(channel, probe) or pick(search_youtube(f"{track['title']} {ARTIST_NAME}"), probe)
+        if vid:
+            fixed.append((track, vid))
+        else:
+            unfixed.append(track)
+
+    for track, vid in fixed:
+        print(f"✅ {track['title']}")
+        print(f"   old: {track.get('url')}")
+        print(f"   new: https://www.youtube.com/watch?v={vid['id']}  ({vid['duration']}s)")
+    for track in unfixed:
+        print(f"❔ {track['title']}  -- no replacement found, fix by hand")
+        print(f"   dead url: {track.get('url')}")
+
+    if not apply:
+        print(f"\n(dry run -- {len(fixed)} repairable. Re-run with --apply to write.)")
+        return 0
+
+    for track, vid in fixed:
+        track["url"] = f"https://www.youtube.com/watch?v={vid['id']}"
+    MUSIC_JSON.write_text(
+        json.dumps(music, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
+    print(f"\n✅ Repaired {len(fixed)} URLs. {len(unfixed)} still need manual attention.")
+    print("Now run: python tools/download_audio.py")
+    return 0
+
+
 def cmd_verify(music):
     """Check that every URL already in music.json still resolves on YouTube."""
     print(f"Verifying {len(music)} existing URLs (this takes a minute)...\n")
@@ -327,6 +402,11 @@ def main():
         "--verify", action="store_true", help="check existing URLs still resolve"
     )
     ap.add_argument(
+        "--repair",
+        action="store_true",
+        help="find replacement URLs for videos that have been taken down",
+    )
+    ap.add_argument(
         "--no-search-fallback",
         action="store_true",
         help="channel listing only; skip the per-track YouTube search fallback",
@@ -337,6 +417,9 @@ def main():
 
     if args.verify:
         return cmd_verify(music)
+
+    if args.repair:
+        return cmd_repair(music, args.apply)
 
     have = {match_key(t["title"]) for t in music}
     have_ids = {t.get("id") for t in music}
@@ -365,7 +448,7 @@ def main():
             # artist-qualified query first, then the bare title -- adding the
             # artist name can push an exactly-titled collab upload out of the
             # results entirely.
-            for query in (f"{track['title']} Sam Bowman", track["title"]):
+            for query in (f"{track['title']} {ARTIST_NAME}", track["title"]):
                 vid = pick(search_youtube(query), track)
                 if vid:
                     break
