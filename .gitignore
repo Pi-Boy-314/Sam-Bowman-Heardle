@@ -40,3 +40,4 @@ public/audio/*.wav
 public/audio/*.m4a
 .vercel
 .env*.local
+.env*
