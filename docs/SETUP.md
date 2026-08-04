@@ -263,7 +263,8 @@ Vercel will build and deploy your frontend. Audio files will be handled in the n
 
 ### Step 3: Deploy with Audio Files
 
-**Option 1: Vercel CLI (Recommended)**
+**The CLI is the only way to deploy this project.** Deploying from a git push
+is deliberately turned off — see the warning below.
 
 ```bash
 # Install Vercel CLI (if not already)
@@ -279,19 +280,26 @@ vercel link
 vercel --prod
 ```
 
-The CLI automatically includes `public/audio/` files in the deployment.
+The CLI uploads `public/audio/` along with everything else, using
+`.vercelignore` to decide what to exclude.
 
-**Option 2: Git Push (Automatic)**
+> **⚠️ Why git pushes must not deploy**
+>
+> The 32-second clips in `public/audio/` are excluded by `.gitignore`, so they
+> do not exist in the GitHub repository. A build triggered from GitHub would
+> therefore produce a site where `/api/audio` returns 404 for every song — all
+> 100+ tracks silent — and it would replace the working deployment.
+>
+> To prevent that, `vercel.json` sets:
+>
+> ```json
+> "git": { "deploymentEnabled": false }
+> ```
+>
+> Push to GitHub freely; it will not touch production. When you actually want
+> to ship, run `vercel --prod`.
 
-Once linked, simply push to GitHub:
-
-```bash
-git push origin main
-```
-
-Vercel auto-deploys on push. However, audio files are in `.gitignore`, so you must use Vercel CLI or upload them separately.
-
-**Option 3: Manual Upload via Vercel Dashboard**
+**Alternative: Manual Upload via Vercel Dashboard**
 
 1. After initial deployment, go to Vercel dashboard
 2. Click your project
