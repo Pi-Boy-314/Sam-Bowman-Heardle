@@ -158,9 +158,21 @@ URL means the wrong song plays.
 | `--since YYYY-MM-DD` | Only consider releases on/after this date (faster) |
 | `--apply` | Actually write to `music.json` |
 | `--verify` | Check every URL already in `music.json` still resolves |
+| `--repair` | Find replacement URLs for videos that have been taken down |
 
-`--verify` is worth running occasionally: YouTube videos do get taken down, and
-a dead URL breaks both the clip download and the post-game reveal for that song.
+**Run `--repair` occasionally.** YouTube videos do get taken down, and a dead
+URL breaks both the clip download and the post-game reveal for that song,
+silently. Two entries here were broken this way; the sister Matthew Parker
+Heardle had fourteen.
+
+```bash
+python tools/sync_music.py --repair           # dry run
+python tools/sync_music.py --repair --apply   # write the replacements
+```
+
+It re-matches the dead entries against the artist's current channel using the
+same title+duration rules as the sync, so a replacement is only accepted when it
+is confidently the same recording.
 
 ---
 

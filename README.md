@@ -13,6 +13,9 @@ npm install
 # Add any newly released songs (dry run first, then --apply)
 python tools/sync_music.py
 
+# Find replacements for YouTube links that have gone dead
+python tools/sync_music.py --repair
+
 # Download audio files
 python tools/download_audio.py
 
