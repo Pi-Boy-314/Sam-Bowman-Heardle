@@ -3,10 +3,20 @@
   "start-date": "2026-01-14T06:00:00.000Z",
   "guess-number": 6,
   "times": [
-    1, 2, 4, 8, 16, 32
+    1,
+    2,
+    4,
+    8,
+    16,
+    32
   ],
   "separator": [
-    8, 16, 28, 44, 64, 100
+    8,
+    16,
+    28,
+    44,
+    64,
+    100
   ],
   "tag-list": [
     {
@@ -57,7 +67,6 @@
     }
   ],
   "infinite": false,
-
   "phrases": {
     "song-list": "Click Here for the full list of {heardle-name} Heardle songs.",
     "infinite-pub-text": "Click Here to play \n {heardle-name} Heardle Infinite!",
@@ -66,17 +75,19 @@
     "submit-button": "Submit",
     "next-button": "Next",
     "share-button": "Share",
-
     "infinite-win-text": "Huzzah! You got the {heardle-name} song within {unlocked-time} seconds.",
     "default-win-text": "You got today's {heardle-name} Heardle within {unlocked-time} seconds.",
-
     "infinite-lose-text": "You didn't get the {heardle-name} song. Too bad, you can always try again!",
-    "default-lose-text": "You didn't get today's {heardle-name} Heardle. Better luck tomorrow! \uD83D\uDC8E",
-
+    "default-lose-text": "You didn't get today's {heardle-name} Heardle. Better luck tomorrow! 💎",
     "timer-text": "The next {heardle-name} song starts in:"
   },
-
   "!COMMENT!": "Variant link is  \"infinite\" when infinite is false, or \"base game\" when infinite is true",
   "variant-link": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-  "song-list-link": "https://raw.githubusercontent.com/pi-boy-314/sam-bowman-heardle/refs/heads/main/src/settings/music.json"
+  "song-list-link": "https://raw.githubusercontent.com/pi-boy-314/sam-bowman-heardle/refs/heads/main/src/settings/music.json",
+  "related-heardles": [
+    {
+      "name": "Matthew Parker Heardle",
+      "url": "https://matthew-parker-heardle.vercel.app/"
+    }
+  ]
 }

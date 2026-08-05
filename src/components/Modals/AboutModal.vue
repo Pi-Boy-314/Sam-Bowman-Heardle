@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import {onMounted} from "vue";
+import settings from "@/settings/settings.json";
 
 onMounted(()=>{
   document.getElementById("modal-title").innerHTML = "About";
@@ -12,6 +13,13 @@ onMounted(()=>{
     <p>Sam Bowman Heardle is a version of Heardle that features songs from Sam Bowman's discography.</p>
   </div>
   
+  <div class="section" v-if="settings['related-heardles'] && settings['related-heardles'].length">
+    <h3 class="section-title">More Heardles</h3>
+    <p v-for="other in settings['related-heardles']" :key="other.url">
+      <a :href="other.url" target="_blank" rel="noopener noreferrer">{{ other.name }}</a>
+    </p>
+  </div>
+
   <div class="section">
     <h3 class="section-title">Credits</h3>
     <p>Adapted by <a href="https://github.com/pi-boy-314" target="_blank" rel="noopener noreferrer">Pi Boy 314</a></p>
